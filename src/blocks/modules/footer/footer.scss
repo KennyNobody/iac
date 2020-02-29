@@ -1,0 +1,107 @@
+.footer {
+	&__content {
+		background-color: $dark;
+		padding: 40px 20px;
+		display: flex;
+		justify-content: space-between;
+		color: $blue-light;
+		font-size: 12px;
+	}
+	&__columns {
+		&--1 {
+			width: 245px;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		&--2 {
+			width: 245px;
+			flex-shrink: 0;
+			font-family: $font-title;
+		}
+		&--5 {
+			margin-right: 75px;
+		}
+	}
+	&__text {
+		
+	}
+	&__btn {
+		background-color: $red-light;
+		font-family: $font-title;
+		flex-grow: 1;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $light;
+		text-decoration: none;
+		margin-top: 15px;
+		font-size: 14px;
+		margin-bottom: 10px;
+		width: 100%;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__fact {
+		font-family: $font-title;
+		color: $light;
+		display: flex;
+		align-items: center;
+		svg {
+			width: 18px;
+			display: block;
+			margin-right: 10px;
+			height: 18px;
+		}
+		a {
+			color: $light;
+			text-decoration: none;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+	&__nav {
+		a {
+			font-size: 14px;
+			display: block;
+			color: $light;
+			text-decoration: none;
+			font-family: $font-title;
+			margin-bottom: 10px;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		&--static {
+			a {
+				color: $blue-light;
+			}
+		}
+	}
+}
+
+.social {
+	&__links {
+		display: flex;
+	}
+	&__link {
+		display: block;
+		margin-right: 6px;
+		&:hover {
+			opacity: 0.7;
+		}
+		svg {
+			height: 24px;
+			width: 24px;
+			display: block;
+		}
+	}
+	&__statistic {
+
+	}
+}

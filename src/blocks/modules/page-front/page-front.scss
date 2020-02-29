@@ -1,0 +1,49 @@
+.flags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    &__column-title {
+
+    }
+    &__column-content {
+        display: flex;
+    }
+    &__link {
+        display: block;
+        color: $dark;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 12px;
+        img {
+            display: block;
+            margin-bottom: 10px;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-family: $font-title;
+    }
+}
+
+.special {
+    padding: 24px 24px 45px 24px;
+    background-size: cover;
+    background-position: center;
+    color: $light;
+    margin-bottom: 26px;
+    text-decoration: none;
+    display: block;
+    &:hover {
+        opacity: 0.7;
+    }
+    &__title {
+        margin-bottom: 26px;
+    }
+    &__text {
+        font-family: $font-title;
+        font-size: 20px;
+    }
+}
