@@ -1,0 +1,125 @@
+.single {
+	&__title {
+		margin-bottom: 45px;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 85px;
+	}
+	&__column {
+		&--left {
+			width: calc(100% / 12 * 9 - 6px);
+		}
+		&--right {
+			width: calc(100% / 12 * 3 - 6px);
+		}
+	}
+	&__content {
+		margin-bottom: 40px;
+	}
+	&__tags {
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+	&__from {
+		font-weight: 300;
+		margin-bottom: 28px;
+	}
+	&__words {
+		margin-bottom: 30px;
+	}
+	&__word {
+		padding: 6px 16px;
+		background-color: $light;
+		font-weight: 300;
+		text-decoration: none;
+		color: $dark;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__control {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__nav-link {
+		text-decoration: none;
+		&--prev {
+
+		}
+		&--top {
+			svg {
+				transform: rotate(90deg);
+			}
+		}
+		svg {
+			width: 22px;
+			height: 22px;
+			margin-right: 20px;
+		}
+		span {
+			font-weight: 500;
+			font-size: 30px;
+			color: $blue-light;
+			text-transform: uppercase;
+			font-family: $font-title;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__comments {
+		margin-bottom: 85px;
+	}
+	&__more {
+		margin-bottom: 25px;
+	}
+	&__subtitle {
+		margin-bottom: 20px;
+	}
+	&__articles {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.card {
+	background-color: $blue;
+	color: $light;
+	display: flex;
+	margin-bottom: 12px;
+	&__thumb {
+		width: 76px;
+		min-height: 84px;
+		max-height: 98px;
+		flex-shrink: 0;
+		img {
+			display: block;
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__content {
+		padding: 13px 12px;
+		flex-grow: 1;
+		min-width: 0px;
+		font-weight: 300;
+		font-family: $font-title;
+		b {
+			font-weight: bold;
+		}
+	}
+	&__author {
+		margin-bottom: 10px;
+		a {
+			color: $light;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+.write {
+	&__title {
+		margin-bottom: 32px;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 18px;
+	}
+	&__column {
+		&--left {
+			width: calc(100% / 12 * 4 - 6px);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&--right {
+			width: calc(100% / 12 * 8 - 6px);
+		}
+	}
+	&__label {
+		margin-bottom: 20px;
+		display: block;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	&__name {
+		text-transform: uppercase;
+		font-family: $font-title;
+		margin-bottom: 8px;
+	}
+	&__input {
+		height: 40px;
+		border: 0px;
+		background-color: $light;
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-family: $font-title;
+		box-sizing: border-box;
+	}
+	&__textarea {
+		border: 0px;
+		resize: none;
+		background-color: $light;
+		height: 142px;
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-family: $font-title;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-sizing: border-box;
+	}
+	&__control {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__btn {
+		width: 245px;
+		height: 40px;
+		border: none;
+		background-color: $red-light;
+		transition: 0.3s all;
+		color: $light;
+		text-transform: uppercase;
+		font-family: $font-title;
+		cursor: pointer;
+		&:hover {
+			background-color: $red-dark;
+		}
+	}
+}

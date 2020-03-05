@@ -1,0 +1,24 @@
+.analitic {
+	&__tabs {
+		margin-bottom: 15px;
+	}
+	&__tab {
+		text-transform: uppercase;
+		color: $blue-light;
+		text-decoration: none;
+		font-family: $font-title;
+		margin-right: 40px;
+		&:hover {
+			color: #5E7384;
+		}
+		&--active {
+			pointer-events: none;
+			color: $blue;
+		}
+	}
+	&__articles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}

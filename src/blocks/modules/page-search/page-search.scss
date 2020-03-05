@@ -1,0 +1,38 @@
+.page-search {
+	&__tabs {
+		margin-bottom: 15px;
+		display: flex;
+		align-items: center;
+		color: $blue-light;
+	}
+	&__tab {
+		text-transform: uppercase;
+		color: $blue-light;
+		text-decoration: none;
+		font-family: $font-title;
+		margin-right: 40px;
+		margin-left: 5px;
+		margin-right: 5px;
+		&:hover {
+			color: #5E7384;
+		}
+		&--active {
+			pointer-events: none;
+			color: $blue;
+		}
+		&:first-child {
+			margin-left: 0px;
+		}
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	&__separator {
+		display: inline-block;
+		background-color: $blue-light;
+		height: 100%;
+		width: 2px;
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+}

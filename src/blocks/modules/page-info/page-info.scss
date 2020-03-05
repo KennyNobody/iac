@@ -1,0 +1,29 @@
+.info {
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 100px;
+	}
+	&__column {
+		width: calc(50% - 6px);
+	}
+	&__content {
+		p {
+			margin-bottom: 1rem;
+		}
+		b {
+			font-weight: bold;
+			color: $red-light;
+		}
+		a {
+			color: $dark;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

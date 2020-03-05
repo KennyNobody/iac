@@ -1,297 +1,592 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Информационно-аналитический центр МГУ</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Информационно-аналитический центр МГУ</title>
+	<meta name="theme-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-    <header class="header">
+	<header class="header">
 	<div class="container header__container">
-		Шапка
+		<a href="/" class="header__logo">
+			<svg class="icon-svg">
+				<use xlink:href="img/sprites/sprite.svg#logo"></use>
+			</svg>
+		</a>
+		<div class="header__content">
+			<div class="header__topline">
+				<div class="header__topline-left">
+					<form action="" class="header__search search">
+						<input type="text" placeholder="Поиск">
+						<button>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="header__topline-right">
+					<a href="" class="header__top-link">
+						О центре
+					</a>
+					<a href="" class="header__top-link">
+						Контакты
+					</a>
+					<div class="social header__social">
+						<a href="#" class="social__link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#ok"></use>
+							</svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#tg"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<nav class="header__navline nav">
+				<a class="nav__link" href="index.html">
+					Главная
+				</a>
+				<a class="nav__link" href="experts.html">
+					Эксперты
+				</a>
+				<span class="nav__box">
+					Аналитика
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#drop"></use>
+					</svg>
+					<div class="nav__drop">
+						<div class="nav__drop-content">
+							<a href="analitic.html">
+								Политкухня
+							</a>
+							<a href="analitic.html">
+								Мировидение
+							</a>
+							<a href="analitic.html">
+								О делах
+							</a>
+							<a href="analitic.html">
+								Люди
+							</a>
+						</div>
+					</div>
+				</span>
+				<span class="nav__box">
+					Мероприятия
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#drop"></use>
+					</svg>
+					<div class="nav__drop">
+						<div class="nav__drop-content">
+							<a href="">
+								Актуально
+							</a>
+							<a href="">
+								Как это было
+							</a>
+						</div>
+					</div>
+				</span>
+				<a class="nav__link" href="news.html">
+					Новости
+				</a>
+				<span class="nav__box nav__box--red">
+					Хан-тенгри
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#drop"></use>
+					</svg>
+					<div class="nav__drop nav__drop--red">
+						<div class="nav__drop-content">
+							<a href="">
+								О журнале
+							</a>
+							<a href="">
+								Команда
+							</a>
+							<a href="">
+								Мнения
+							</a>
+							<a href="">
+								Ориенталии
+							</a>
+							<a href="">
+								Культура
+							</a>
+							<a href="">
+								История
+							</a>
+						</div>
+					</div>
+				</span>
+			</nav>
+		</div>
 	</div>
 </header>
-    <main class="content">
-        <div class="container">
-            <div class="layout">
-                <div class="layout__main">
-                    <section class="section section--news news news--accent">
-                        <div class="section__header">
-                            <h2 class="title section__title">
-                                Аналитика
-                            </h2>
-                        </div>
-                        <div class="section__content news__articles">
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                    мировидение
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <time class="time article__time">
-                                        July 13, 2013
-                                    </time>
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                    мировидение
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <time class="time article__time">
-                                        July 13, 2013
-                                    </time>
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                    мировидение
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <time class="time article__time">
-                                        July 13, 2013
-                                    </time>
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                    мировидение
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <time class="time article__time">
-                                        July 13, 2013
-                                    </time>
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                    мировидение
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <time class="time article__time">
-                                        July 13, 2013
-                                    </time>
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <div class="article--clear"></div>
-                            <div class="article--clear"></div>
-                            <div class="article--clear"></div>
-                        </div>
-                    </section>
-                    <section class="flags">
-                        <div class="flags__column-title">
-                            <h2 class="title">
-                                Статьи <br>
-                                по странам
-                            </h2>
-                        </div>
-                        <div class="flags__column-content">
-                            <a href="news.html" class="flags__link">
-                                <img src="img/flag-kz.svg" alt="">
-                                <p class="flags__text">
-                                    Казахстан
-                                </p>
-                            </a>
-                            <a href="news.html" class="flags__link">
-                                <img src="img/flag-kg.svg" alt="">
-                                <p class="flags__text">
-                                    Кыргызстан
-                                </p>
-                            </a>
-                            <a href="news.html" class="flags__link">
-                                <img src="img/flag-ru.svg" alt="">
-                                <p class="flags__text">
-                                    Россия
-                                </p>
-                            </a>
-                            <a href="news.html" class="flags__link">
-                                <img src="img/flag-tk.svg" alt="">
-                                <p class="flags__text">
-                                    Туркменистан
-                                </p>
-                            </a>
-                            <a href="news.html" class="flags__link">
-                                <img src="img/flag-tj.svg" alt="">
-                                <p class="flags__text">
-                                    Таджикистан
-                                </p>
-                            </a>
-                            <a href="news.html" class="flags__link">
-                                <img src="img/flag-uz.svg" alt="">
-                                <p class="flags__text">
-                                    Узбекистан
-                                </p>
-                            </a>
-                        </div>
-                    </section>
-                    <section class="section section--news news news--party">
-                        <div class="section__header">
-                            <h2 class="title section__title">
-                                Мероприятия
-                            </h2>
-                        </div>
-                        <div class="section__content news__articles">
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                    July 13, 2013
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                   July 13, 2013
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <a href="single-news.html" class="article">
-                                <span class="article__tag">
-                                   July 13, 2013
-                                </span>
-                                <div class="article__thumb">
-                                    <img src="http://placehold.it/900x600" alt="Превью">
-                                </div>
-                                <div class="article__content">
-                                    <h3 class="article__title">
-                                        Эмомали Рахмон запустил свой процесс транзита власти
-                                    </h3>
-                                </div>
-                            </a>
-                            <div class="article--clear"></div>
-                            <div class="article--clear"></div>
-                            <div class="article--clear"></div>
-                        </div>
-                    </section>
-                    <a href="single-news.html" class="special" style="background: linear-gradient(90deg, #1A242D 0%, rgba(26, 36, 45, 0) 100%), url('http://placehold.it/900x600');">
-                        <h2 class="title special__title">
-                            Спецпроект
-                        </h2>
-                        <h3 class="special__text">
-                            Посол России поблагодарил Кыргызстан <br> за борьбу с фальсификацией истории
-                        </h3>
-                    </a>
-                </div>
-                <div class="layout__sidebar">
-                    <aside class="sidebar">
-                        <h2 class="title sidebar__title">
-                            Новости
-                        </h2>
-                        <a href="single-news.html" class="sidebar__article">
-                            <time class="time sidebar__time">
-                                Apr 7, 2017
-                            </time>
-                            <h3 class="sidebar__name">
+	<main class="content">
+		<div class="container">
+			<div class="layout">
+				<div class="layout__main">
+					<section class="section section--news news news--accent">
+						<div class="section__header">
+							<h2 class="title section__title">
+								Аналитика
+							</h2>
+						</div>
+						<div class="section__content news__articles">
+							<a href="single-news.html" class="article article--accent article--66">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb article__thumb--accent">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content article__content--accent">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<div class="article--clear-33"></div>
+							<div class="article--clear-33"></div>
+							<div class="article--clear-33"></div>
+						</div>
+					</section>
+					<section class="flags">
+						<div class="flags__column-title">
+							<h2 class="title">
+								Статьи <br>
+								по странам
+							</h2>
+						</div>
+						<div class="flags__column-content">
+							<a href="news.html" class="flags__link">
+								<img src="img/flag-kz.svg" alt="">
+								<p class="flags__text">
+									Казахстан
+								</p>
+							</a>
+							<a href="news.html" class="flags__link">
+								<img src="img/flag-kg.svg" alt="">
+								<p class="flags__text">
+									Кыргызстан
+								</p>
+							</a>
+							<a href="news.html" class="flags__link">
+								<img src="img/flag-ru.svg" alt="">
+								<p class="flags__text">
+									Россия
+								</p>
+							</a>
+							<a href="news.html" class="flags__link">
+								<img src="img/flag-tk.svg" alt="">
+								<p class="flags__text">
+									Туркменистан
+								</p>
+							</a>
+							<a href="news.html" class="flags__link">
+								<img src="img/flag-tj.svg" alt="">
+								<p class="flags__text">
+									Таджикистан
+								</p>
+							</a>
+							<a href="news.html" class="flags__link">
+								<img src="img/flag-uz.svg" alt="">
+								<p class="flags__text">
+									Узбекистан
+								</p>
+							</a>
+						</div>
+					</section>
+					<section class="section section--news news news--party">
+						<div class="section__header">
+							<h2 class="title section__title">
+								Мероприятия
+							</h2>
+						</div>
+						<div class="section__content news__articles">
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									July 13, 2013
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									July 13, 2013
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--33">
+								<span class="article__tag">
+									July 13, 2013
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<div class="article--clear-33"></div>
+							<div class="article--clear-33"></div>
+							<div class="article--clear-33"></div>
+						</div>
+					</section>
+					<a href="single-news.html" class="special" style="background: linear-gradient(90deg, #1A242D 0%, rgba(26, 36, 45, 0) 100%), url('http://placehold.it/900x600');">
+						<h2 class="title special__title">
+							Спецпроект
+						</h2>
+						<h3 class="special__text">
+							Посол России поблагодарил Кыргызстан <br> за борьбу с фальсификацией истории
+						</h3>
+					</a>
+				</div>
+				<div class="layout__sidebar">
+					<aside class="sidebar">
+						<h2 class="title sidebar__title">
+							Новости
+						</h2>
+						<a href="single-news.html" class="sidebar__article">
+							<time class="time sidebar__time">
+								Apr 7, 2017
+							</time>
+							<h3 class="sidebar__name">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+						<a href="single-news.html" class="sidebar__article">
+							<time class="time sidebar__time">
+								Apr 7, 2017
+							</time>
+							<h3 class="sidebar__name">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+						<a href="single-news.html" class="sidebar__article">
+							<time class="time sidebar__time">
+								Apr 7, 2017
+							</time>
+							<h3 class="sidebar__name">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+						<a href="single-news.html" class="sidebar__article">
+							<time class="time sidebar__time">
+								Apr 7, 2017
+							</time>
+							<h3 class="sidebar__name">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+						<a href="single-news.html" class="sidebar__article">
+							<time class="time sidebar__time">
+								Apr 7, 2017
+							</time>
+							<h3 class="sidebar__name">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+						<a href="single-news.html" class="sidebar__article">
+							<time class="time sidebar__time">
+								Apr 7, 2017
+							</time>
+							<h3 class="sidebar__name">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+					</aside>
+				</div>
+			</div>
+			<div class="layout">
+				<div class="layout__main">
+					<section class="section section--news news news--bit">
+						<div class="section__header">
+							<h2 class="title section__title">
+								Хан-Тенгри
+							</h2>
+						</div>
+						<div class="section__content news__articles">
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x1600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+										Эмомали Рахмон запустил свой процесс транзита власти
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article">
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+						</div>
+					</section>
+				</div>
+				<div class="layout__sidebar layout__sidebar--0">
+					<aside class="sidebar sidebar--light">
+						<div class="sidebar__header">
+							<h2 class="title sidebar__title">
+								Новости
+							</h2>
+						</div>
+						<a href="single-news.html" class="sidebar__article sidebar__article--light" style="background-image: url('http://placehold.it/900x600');">
+							<h3 class="sidebar__name sidebar__name--light">
+								Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+							</h3>
+						</a>
+						<a href="single-news.html" class="sidebar__article sidebar__article--light" style="background-image: url('http://placehold.it/900x600');">
+                            <h3 class="sidebar__name sidebar__name--light">
                                 Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
                             </h3>
                         </a>
-                        <a href="single-news.html" class="sidebar__article">
-                            <time class="time sidebar__time">
-                                Apr 7, 2017
-                            </time>
-                            <h3 class="sidebar__name">
-                                Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-                            </h3>
-                        </a>
-                        <a href="single-news.html" class="sidebar__article">
-                            <time class="time sidebar__time">
-                                Apr 7, 2017
-                            </time>
-                            <h3 class="sidebar__name">
-                                Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-                            </h3>
-                        </a>
-                        <a href="single-news.html" class="sidebar__article">
-                            <time class="time sidebar__time">
-                                Apr 7, 2017
-                            </time>
-                            <h3 class="sidebar__name">
-                                Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-                            </h3>
-                        </a>
-                        <a href="single-news.html" class="sidebar__article">
-                            <time class="time sidebar__time">
-                                Apr 7, 2017
-                            </time>
-                            <h3 class="sidebar__name">
-                                Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-                            </h3>
-                        </a>
-                        <a href="single-news.html" class="sidebar__article">
-                            <time class="time sidebar__time">
-                                Apr 7, 2017
-                            </time>
-                            <h3 class="sidebar__name">
-                                Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-                            </h3>
-                        </a>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
+					</aside>
+				</div>
+			</div>
+			<div class="layout layout--block">
+				<section class="partners">
+					<h2 class="title title--center partners__title">
+						Партнеры
+					</h2>
+					<div class="partners__items">
+						<a href="" class="partners__item">
+							<img src="img/partner-1.png" alt="Партнер">
+						</a>
+						<a href="" class="partners__item">
+							<img src="img/partner-2.png" alt="Партнер">
+						</a>
+						<a href="" class="partners__item">
+							<img src="img/partner-3.png" alt="Партнер">
+						</a>
+						<a href="" class="partners__item">
+							<img src="img/partner-4.png" alt="Партнер">
+						</a>
+						<a href="" class="partners__item">
+							<img src="img/partner-5.png" alt="Партнер">
+						</a>
+						<a href="" class="partners__item">
+							<img src="img/partner-6.png" alt="Партнер">
+						</a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
 	<div class="container footer__container">
 		<div class="footer__content">
 			<div class="footer__columns footer__columns--1">
@@ -340,20 +635,19 @@
 				</div>
 			</div>
 			<div class="footer__columns footer__columns--2">
-				<p class="footer__text">
-					Ссылка на ia-centr.ru обязательна при любом использовании материалов с данного сайта. Все права защищены и охранаются законом.
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					© ia-centr.ru, 2008
-				</p>
-			</div>
-			<div class="footer__columns footer__columns--3">
+				<div class="footer__nav">
+					<a href="">
+						Главная
+					</a>
+				</div>
 				<div class="footer__nav">
 					<a href="">
 						Эксперты
+					</a>
+				</div>
+				<div class="footer__nav">
+					<a href="">
+						Аналитика
 					</a>
 					<a href="">
 						Политкухня
@@ -364,18 +658,51 @@
 					<a href="">
 						О делах
 					</a>
-				</div>
-			</div>
-			<div class="footer__columns footer__columns--4">
-				<div class="footer__nav">
 					<a href="">
 						Люди
 					</a>
+				</div>
+			</div>
+			<div class="footer__columns footer__columns--3">
+				<div class="footer__nav">
+					<a href="">
+						Мероприятия
+					</a>
+					<a href="">
+						Актуально
+					</a>
+					<a href="">
+						Как это было
+					</a>
+				</div>
+				<div class="footer__nav">
 					<a href="">
 						Новости
 					</a>
+				</div>
+			</div>
+			<div class="footer__columns footer__columns--4">
+				<div class="footer__nav footer__nav--static">
 					<a href="">
-						Хан-Тенгри
+						Хан-тенгри
+					</a>
+					<a href="">
+						О журнале
+					</a>
+					<a href="">
+						Команда проекта
+					</a>
+					<a href="">
+						Мнения
+					</a>
+					<a href="">
+						Ориенталии
+					</a>
+					<a href="">
+						Культура
+					</a>
+					<a href="">
+						История
 					</a>
 				</div>
 			</div>
@@ -384,18 +711,25 @@
 					<a href="">
 						О Центре
 					</a>
-					<a href="">
-						Мероприятия
-					</a>
+				</div>
+				<div class="footer__nav footer__nav--static">
 					<a href="">
 						Контакты
 					</a>
 				</div>
 			</div>
+			<div class="footer__columns footer__columns--6">
+				<p class="footer__text">
+					Ссылка на ia-centr.ru обязательна при любом использовании материалов с данного сайта. Все права защищены и охранаются законом.
+					<br>
+					<br>
+					© ia-centr.ru, 2008
+				</p>
+			</div>
 		</div>
 	</div>
 </footer>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
