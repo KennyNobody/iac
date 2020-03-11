@@ -1,0 +1,33 @@
+.han-info {
+	padding-top: 160px;
+	padding-bottom: 50px;
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		&--left {
+			width: calc(100% / 12 * 3 - 6px);
+		}
+		&--right {
+			width: calc(100% / 12 * 9 - 6px);
+		}
+	}
+	&__title {
+		margin-bottom: 12px;
+	}
+	&__text {
+		font-weight: 300;
+	}
+	&__btn {
+		font-family: $font-title;
+		text-decoration: none;
+		color: $light;
+		background-color: $red-light;
+		text-transform: uppercase;
+		padding: 6px 7px;
+		&:hover {
+			background-color: $red-dark;
+		}
+	}
+}

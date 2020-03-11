@@ -46,6 +46,9 @@
 		&:hover {
 			opacity: 0.7;
 		}
+		&--light {
+			color: $blue-light;
+		}
 	}
 	&__social {
 		display: flex;
@@ -87,12 +90,20 @@
 			width: 13px;
 		}
 	}
+	&--light {
+		input {
+			background-color: $dark;
+		}
+	}
 }
 
 .nav {
 	background-color: $blue;
 	font-family: $font-title;
 	display: flex;
+	&--dark {
+		background-color: $dark;
+	}
 	&__link {
 		display: flex;
 		justify-content: center;
@@ -122,6 +133,18 @@
 			}
 		}
 	}
+	&__drop-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: $light;
+		svg {
+			height: 5px;
+			width: 7px;
+			margin-left: 6px;
+		}
+	}
 	&__box {
 		flex-grow: 1;
 		display: flex;
@@ -132,15 +155,32 @@
 		padding: 8px 21px;
 		color: $light;
 		cursor: pointer;
-		svg {
-			height: 5px;
-			width: 7px;
-			margin-left: 6px;
+		text-decoration: none;
+		&:after {
+			content: "";
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+			height: 2px;
+			display: block;
+			position: absolute;
+			z-index: 2;
+			background-color: #fff;
+			opacity: 0;
+			transition: 0.3s all;
 		}
 		&:hover {
 			.nav__drop {
 				max-height: 300px;
 			}
+			&:after {
+				opacity: 1;
+			}
+		}
+		svg {
+			height: 5px;
+			width: 7px;
+			margin-left: 6px;
 		}
 		&--red {
 			background-color: $red-light;
@@ -151,7 +191,7 @@
 		top: 100%;
 		left: 0px;
 		right: 0px;
-		background-color: #07183E;
+		background-color: $dark;
 		z-index: 3;
 		overflow: hidden;
 		max-height: 0px;

@@ -1,0 +1,81 @@
+.han-intro {
+	&__content {
+		height: 500px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: -100px;
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 17px 59px;
+	}
+	&__h1 {
+		color: $light;
+		text-transform: uppercase;
+		background-color: $red-light;
+		font-family: $font-title;
+		padding: 6px 12px;
+		font-weight: 500;
+		font-size: 40px;
+		width: fit-content;
+		margin-bottom: 12px;
+		line-height: 1.38;
+		&--bit {
+			margin-bottom: 0px;
+		}
+	}
+	&__text {
+		width: fit-content;
+		margin-bottom: 3px;
+		color: $light;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.3;
+		font-family: $font-title;
+		padding: 3px 11px;
+		background-color: $dark;
+		text-transform: uppercase;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	&__discript {
+		font-weight: 300;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $light;
+		font-family: $font-title;
+		margin-top: 80px;
+	}
+	&__columns {
+		display: flex;
+		margin-bottom: 22px;
+		align-items: center;
+		&:last-child {
+			margin-bottom: 42px;
+		}
+	}
+	&__column {
+		&--left {
+			flex-shrink: 0;
+			margin-right: 12px;
+			width: 225px;
+		}
+		&--right {
+			min-width: 0px;
+			flex-grow: 1;
+		}
+	}
+	&__email {
+		font-size: 20px;
+		color: $light;
+		font-family: $font-title;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

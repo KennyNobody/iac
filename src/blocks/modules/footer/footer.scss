@@ -7,6 +7,9 @@
 		display: flex;
 		justify-content: space-between;
 		color: $blue-light;
+		&--dark {
+			background-color: #242E36;
+		}
 	}
 	&__columns {
 		&--1 {

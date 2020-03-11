@@ -1,4 +1,7 @@
 .single {
+	&--han {
+		padding-top: 55px;
+	}
 	&__title {
 		margin-bottom: 45px;
 	}
@@ -13,6 +16,7 @@
 		}
 		&--right {
 			width: calc(100% / 12 * 3 - 6px);
+			padding-bottom: 170px;
 		}
 	}
 	&__content {
@@ -84,6 +88,10 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
+	&__side-article {
+		position: sticky;
+		top: 15px;
+	}
 }
 
 .card {
@@ -91,6 +99,9 @@
 	color: $light;
 	display: flex;
 	margin-bottom: 12px;
+	&--han {
+		background-color: $dark;
+	}
 	&__thumb {
 		width: 76px;
 		min-height: 84px;

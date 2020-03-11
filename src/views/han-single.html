@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Одиночная запись</title>
+	<title>Хан-Тенгри одиночная новость</title>
 	<meta name="theme-color" content="#fff">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -25,163 +25,16 @@
 	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="body">
-	<header class="header">
-	<div class="container header__container">
-		<a href="/" class="header__logo">
-			<svg class="icon-svg">
-				<use xlink:href="img/sprites/sprite.svg#logo"></use>
-			</svg>
-		</a>
-		<div class="header__content">
-			<div class="header__topline">
-				<div class="header__topline-left">
-					<form action="" class="header__search search">
-						<input type="text" placeholder="Поиск">
-						<button>
-							<svg class="icon-svg">
-								<use xlink:href="img/sprites/sprite.svg#search"></use>
-							</svg>
-						</button>
-					</form>
-				</div>
-				<div class="header__topline-right">
-					<a href="" class="header__top-link">
-						О центре
-					</a>
-					<a href="" class="header__top-link">
-						Контакты
-					</a>
-					<div class="social header__social">
-						<a href="#" class="social__link">
-							<svg class="icon-svg">
-								<use xlink:href="img/sprites/sprite.svg#vk"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__link">
-							<svg class="icon-svg">
-								<use xlink:href="img/sprites/sprite.svg#fb"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__link">
-							<svg class="icon-svg">
-								<use xlink:href="img/sprites/sprite.svg#twitter"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__link">
-							<svg class="icon-svg">
-								<use xlink:href="img/sprites/sprite.svg#ok"></use>
-							</svg>
-						</a>
-						<a href="#" class="social__link">
-							<svg class="icon-svg">
-								<use xlink:href="img/sprites/sprite.svg#tg"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
-			<nav class="header__navline nav">
-				<a class="nav__link" href="index.html">
-					Главная
-				</a>
-				<a class="nav__link" href="experts.html">
-					Эксперты
-				</a>
-				<span class="nav__box">
-					Аналитика
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
-					<div class="nav__drop">
-						<div class="nav__drop-content">
-							<a href="analitic.html">
-								Политкухня
-							</a>
-							<a href="analitic.html">
-								Мировидение
-							</a>
-							<a href="analitic.html">
-								О делах
-							</a>
-							<a href="analitic.html">
-								Люди
-							</a>
-						</div>
-					</div>
-				</span>
-				<span class="nav__box">
-					Мероприятия
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
-					<div class="nav__drop">
-						<div class="nav__drop-content">
-							<a href="">
-								Актуально
-							</a>
-							<a href="">
-								Как это было
-							</a>
-						</div>
-					</div>
-				</span>
-				<a class="nav__link" href="news.html">
-					Новости
-				</a>
-				<span class="nav__box nav__box--red">
-					Хан-тенгри
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
-					<div class="nav__drop nav__drop--red">
-						<div class="nav__drop-content">
-							<a href="">
-								О журнале
-							</a>
-							<a href="">
-								Команда
-							</a>
-							<a href="">
-								Мнения
-							</a>
-							<a href="">
-								Ориенталии
-							</a>
-							<a href="">
-								Культура
-							</a>
-							<a href="">
-								История
-							</a>
-						</div>
-					</div>
-				</span>
-			</nav>
-		</div>
-	</div>
-</header>
+<body class="body body--dark">
+	@@include("../blocks/modules/header/header--dark.html")
 	<main class="content">
 		<div class="container">
-			<div class="layout layout--block">
-				<section class="single">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<a href="analitic.html" class="breadcrumbs__link">
-							Аналитика
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
-							Одиночная запись
-						</span>
-					</div>
+			@@include("../blocks/modules/han-intro/han-intro-bit.html")
+		</div>
+		<div class="wrapper">
+			<div class="container">
+				
+				<section class="single single--han">
 					<div class="single__columns">
 						<div class="single__column single__column--left">
 							<h1 class="title single__title">
@@ -269,47 +122,9 @@
 									«Мы должны еще и по международному календарю работать, приравнять свой календарь соревнований к нему и вести плодотворную подготовку, сильнейшие должны готовиться к серьезным стартам. Школе стрельбы из лука надо менять свою работу, уделять внимание членам сборной», - отмечает легенда спорта.
 								</p>
 							</div>
-							<div class="single__tags text">
-								<strong>Теги:</strong> <a href="">лук</a>, <a href="">Таджикистан</a>, <a href="">Зебинисо Рустамова</a>
-							</div>
-							<div class="single__from text">
-								<strong>Источник:</strong> <a href="https://sptnkne.ws/Bxat">sptnkne.ws/Bxat</a>
-							</div>
-							<div class="single__words">
-								<a href="#" class="single__word">
-									#Зебинисо Рустамова
-								</a>
-								<a href="#" class="single__word">
-									#Таджикистан
-								</a>
-								<a href="#" class="single__word">
-									#стрельба
-								</a>
-								<a href="#" class="single__word">
-									#лук
-								</a>
-							</div>
-							<div class="single__control">
-								<a href="analitic.html" class="single__nav-link single__nav-link--prev">
-									<svg class="icon-svg">
-										<use xlink:href="img/sprites/sprite.svg#arrow-prev"></use>
-									</svg>
-									<span>
-										Назад
-									</span>
-								</a>
-								<a href="#" class="single__nav-link single__nav-link--top">
-									<svg class="icon-svg">
-										<use xlink:href="img/sprites/sprite.svg#arrow-prev"></use>
-									</svg>
-									<span>
-										Наверх
-									</span>
-								</a>
-							</div>
 						</div>
 						<div class="single__column single__column--right">
-							<div class="card">
+							<div class="card card--han">
 								<div class="card__thumb">
 									<img src="http://placehold.it/900x600" alt="Аватар">
 								</div>
@@ -327,226 +142,12 @@
 					<div class="single__comments">
 						Система комментариев duscus
 					</div>
-					<div class="single__more">
-						<h3 class="title single__subtitle">
-							Другие статьи
-						</h3>
-						<div class="single__articles">
-							<a href="single-news.html" class="article article--25">
-								<span class="article__tag">
-									мировидение
-								</span>
-								<div class="article__thumb">
-									<img src="http://placehold.it/900x600" alt="Превью">
-								</div>
-								<div class="article__content">
-									<time class="time article__time">
-										July 13, 2013
-									</time>
-									<h3 class="article__title">
-										Эмомали Рахмон запустил свой процесс транзита власти
-									</h3>
-								</div>
-							</a>
-							<a href="single-news.html" class="article article--25">
-								<span class="article__tag">
-									мировидение
-								</span>
-								<div class="article__thumb">
-									<img src="http://placehold.it/900x600" alt="Превью">
-								</div>
-								<div class="article__content">
-									<time class="time article__time">
-										July 13, 2013
-									</time>
-									<h3 class="article__title">
-										Эмомали Рахмон запустил свой процесс транзита власти
-									</h3>
-								</div>
-							</a>
-							<a href="single-news.html" class="article article--25">
-								<span class="article__tag">
-									мировидение
-								</span>
-								<div class="article__thumb">
-									<img src="http://placehold.it/900x600" alt="Превью">
-								</div>
-								<div class="article__content">
-									<time class="time article__time">
-										July 13, 2013
-									</time>
-									<h3 class="article__title">
-										Эмомали Рахмон запустил свой процесс транзита власти
-									</h3>
-								</div>
-							</a>
-							<a href="single-news.html" class="article article--25">
-								<span class="article__tag">
-									мировидение
-								</span>
-								<div class="article__thumb">
-									<img src="http://placehold.it/900x600" alt="Превью">
-								</div>
-								<div class="article__content">
-									<time class="time article__time">
-										July 13, 2013
-									</time>
-									<h3 class="article__title">
-										Эмомали Рахмон запустил свой процесс транзита власти
-									</h3>
-								</div>
-							</a>
-							<div class="article--clear-25"></div>
-							<div class="article--clear-25"></div>
-						</div>
-					</div>
 				</section>
+				@@include("../blocks/modules/partners/partners.html")
 			</div>
 		</div>
 	</main>
-	<footer class="footer">
-	<div class="container footer__container">
-		<div class="footer__content">
-			<div class="footer__columns footer__columns--1">
-				<a href="#" class="social__link">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#vk"></use>
-					</svg>
-				</a>
-				<a href="#" class="social__link">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#fb"></use>
-					</svg>
-				</a>
-				<a href="#" class="social__link">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#twitter"></use>
-					</svg>
-				</a>
-				<a href="#" class="social__link">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#ok"></use>
-					</svg>
-				</a>
-				<a href="#" class="social__link">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#tg"></use>
-					</svg>
-				</a>
-				<div class="social__statistic">
-					<img src="img/statistic.png" alt="">
-				</div>
-				<a href="form.html" class="footer__btn">
-					Связаться с редакцией
-				</a>
-				<div class="footer__fact">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#marker"></use>
-					</svg>
-					Россия, Москва
-				</div>
-				<div class="footer__fact">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#mail"></use>
-					</svg>
-					<a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
-				</div>
-			</div>
-			<div class="footer__columns footer__columns--2">
-				<div class="footer__nav">
-					<a href="">
-						Главная
-					</a>
-				</div>
-				<div class="footer__nav">
-					<a href="">
-						Эксперты
-					</a>
-				</div>
-				<div class="footer__nav">
-					<a href="">
-						Аналитика
-					</a>
-					<a href="">
-						Политкухня
-					</a>
-					<a href="">
-						Мировидение
-					</a>
-					<a href="">
-						О делах
-					</a>
-					<a href="">
-						Люди
-					</a>
-				</div>
-			</div>
-			<div class="footer__columns footer__columns--3">
-				<div class="footer__nav">
-					<a href="">
-						Мероприятия
-					</a>
-					<a href="">
-						Актуально
-					</a>
-					<a href="">
-						Как это было
-					</a>
-				</div>
-				<div class="footer__nav">
-					<a href="">
-						Новости
-					</a>
-				</div>
-			</div>
-			<div class="footer__columns footer__columns--4">
-				<div class="footer__nav footer__nav--static">
-					<a href="">
-						Хан-тенгри
-					</a>
-					<a href="">
-						О журнале
-					</a>
-					<a href="">
-						Команда проекта
-					</a>
-					<a href="">
-						Мнения
-					</a>
-					<a href="">
-						Ориенталии
-					</a>
-					<a href="">
-						Культура
-					</a>
-					<a href="">
-						История
-					</a>
-				</div>
-			</div>
-			<div class="footer__columns footer__columns--5">
-				<div class="footer__nav footer__nav--static">
-					<a href="">
-						О Центре
-					</a>
-				</div>
-				<div class="footer__nav footer__nav--static">
-					<a href="">
-						Контакты
-					</a>
-				</div>
-			</div>
-			<div class="footer__columns footer__columns--6">
-				<p class="footer__text">
-					Ссылка на ia-centr.ru обязательна при любом использовании материалов с данного сайта. Все права защищены и охранаются законом.
-					<br>
-					<br>
-					© ia-centr.ru, 2008
-				</p>
-			</div>
-		</div>
-	</div>
-</footer>
+	@@include("../blocks/modules/footer/footer--dark.html")
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
 </body>

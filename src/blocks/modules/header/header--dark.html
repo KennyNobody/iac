@@ -2,13 +2,13 @@
 	<div class="container header__container">
 		<a href="/" class="header__logo">
 			<svg class="icon-svg">
-				<use xlink:href="img/sprites/sprite.svg#logo"></use>
+				<use xlink:href="img/sprites/sprite.svg#logo-light"></use>
 			</svg>
 		</a>
 		<div class="header__content">
 			<div class="header__topline">
 				<div class="header__topline-left">
-					<form action="" class="header__search search">
+					<form action="" class="header__search search search--light">
 						<input type="text" placeholder="Поиск">
 						<button>
 							<svg class="icon-svg">
@@ -18,10 +18,10 @@
 					</form>
 				</div>
 				<div class="header__topline-right">
-					<a href="" class="header__top-link">
+					<a href="" class="header__top-link header__top-link--light">
 						О центре
 					</a>
-					<a href="" class="header__top-link">
+					<a href="" class="header__top-link header__top-link--light">
 						Контакты
 					</a>
 					<div class="social header__social">
@@ -53,7 +53,7 @@
 					</div>
 				</div>
 			</div>
-			<nav class="header__navline nav">
+			<nav class="header__navline nav nav--dark">
 				<a class="nav__link" href="index.html">
 					Главная
 				</a>
@@ -101,17 +101,19 @@
 				<a class="nav__link" href="news.html">
 					Новости
 				</a>
-				<a href="han-index.html" class="nav__box nav__box--red">
-					Хан-тенгри
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
+				<span class="nav__box nav__box--red">
+					<a href="han-index.html" class="nav__drop-link">
+						Хан-Тенгри
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#drop"></use>
+						</svg>
+					</a>
 					<div class="nav__drop nav__drop--red">
 						<div class="nav__drop-content">
 							<a href="han-single.html">
 								О журнале
 							</a>
-							<a href="nan-team.html">
+							<a href="han-team.html">
 								Команда
 							</a>
 							<a href="han-news.html">
@@ -128,7 +130,7 @@
 							</a>
 						</div>
 					</div>
-				</a>
+				</span>
 			</nav>
 		</div>
 	</div>

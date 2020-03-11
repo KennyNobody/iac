@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Контакты</title>
+	<title>Команда</title>
 	<meta name="theme-color" content="#fff">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -25,18 +25,18 @@
 	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="body">
+<body class="body body--dark">
 	<header class="header">
 	<div class="container header__container">
 		<a href="/" class="header__logo">
 			<svg class="icon-svg">
-				<use xlink:href="img/sprites/sprite.svg#logo"></use>
+				<use xlink:href="img/sprites/sprite.svg#logo-light"></use>
 			</svg>
 		</a>
 		<div class="header__content">
 			<div class="header__topline">
 				<div class="header__topline-left">
-					<form action="" class="header__search search">
+					<form action="" class="header__search search search--light">
 						<input type="text" placeholder="Поиск">
 						<button>
 							<svg class="icon-svg">
@@ -46,10 +46,10 @@
 					</form>
 				</div>
 				<div class="header__topline-right">
-					<a href="" class="header__top-link">
+					<a href="" class="header__top-link header__top-link--light">
 						О центре
 					</a>
-					<a href="" class="header__top-link">
+					<a href="" class="header__top-link header__top-link--light">
 						Контакты
 					</a>
 					<div class="social header__social">
@@ -81,7 +81,7 @@
 					</div>
 				</div>
 			</div>
-			<nav class="header__navline nav">
+			<nav class="header__navline nav nav--dark">
 				<a class="nav__link" href="index.html">
 					Главная
 				</a>
@@ -129,17 +129,19 @@
 				<a class="nav__link" href="news.html">
 					Новости
 				</a>
-				<a href="han-index.html" class="nav__box nav__box--red">
-					Хан-тенгри
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
+				<span class="nav__box nav__box--red">
+					<a href="han-index.html" class="nav__drop-link">
+						Хан-Тенгри
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#drop"></use>
+						</svg>
+					</a>
 					<div class="nav__drop nav__drop--red">
 						<div class="nav__drop-content">
 							<a href="han-single.html">
 								О журнале
 							</a>
-							<a href="nan-team.html">
+							<a href="han-team.html">
 								Команда
 							</a>
 							<a href="han-news.html">
@@ -156,67 +158,194 @@
 							</a>
 						</div>
 					</div>
-				</a>
+				</span>
 			</nav>
 		</div>
 	</div>
 </header>
 	<main class="content">
 		<div class="container">
-			<div class="layout layout--block">
-				<section class="info">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
-							Контакты
-						</span>
-					</div>
-					<div class="info__columns">
-						<div class="info__column">
-							<h2 class="title info__title">
-								Контакты
-							</h2>
-							<div class="info__content">
-								<p>
-									НП «Информационно-аналитический центр по изучению общественно-политических процессов на постсоветском пространстве»
-								</p>
-								<p>
-									<b>Адрес:</b> Россия, г. Москва
-									<br>
-									<b>Почта:</b> <a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
-								</p>
+			<section class="han-intro">
+	<div class="breadcrumbs">
+		<a href="index.html" class="breadcrumbs__link breadcrumbs__link--light">
+			Главная
+		</a>
+		<svg class="icon-svg">
+			<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+		</svg>
+		<a href="han-index.html" class="breadcrumbs__link breadcrumbs__link--light">
+			Хан-Тенгри
+		</a>
+		<svg class="icon-svg">
+			<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+		</svg>
+		<span class="breadcrumbs__link breadcrumbs__link--static">
+			Новости
+		</span>
+	</div>
+	<div class="han-intro__columns">
+		<div class="han-intro__column han-intro__column--left">
+			<h1 class="han-intro__h1 han-intro__h1--bit">
+				Хан-Тенгри
+			</h1>
+		</div>
+		<div class="han-intro__column han-intro__column--right">
+			<p class="han-intro__text">
+				Историко-культурный и общественно-политический журнал
+			</p>
+			<p class="han-intro__text">
+				Проблемы и перспективы евразийской интеграции
+			</p>
+		</div>
+	</div>
+	<div class="han-intro__columns">
+		<div class="han-intro__column han-intro__column--left">
+			<a href="mailto:han-tengri@inveb.ru" class="han-intro__email">
+				han-tengri@inveb.ru
+			</a>
+		</div>
+		<div class="han-intro__column han-intro__column--right">
+			<div class="social">
+				<a href="#" class="social__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#vk"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#fb"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#twitter"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#ok"></use>
+					</svg>
+				</a>
+				<a href="#" class="social__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#tg"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+		</div>
+		<div class="wrapper">
+			<div class="container">
+				
+				<section class="han-news">
+					<h2 class="title han-news__title">
+						Команда проекта
+					</h2>
+					<div class="han-news__articles">
+						<article class="man">
+							<div class="man__thumb">
+								<img src="http://placehold.it/900x600" alt="Фото">
 							</div>
-						</div>
-						<div class="info__column">
-							<h2 class="title info__title">
-								Рекламодателям
-							</h2>
-							<div class="info__content">
-								<p>
-									ИАЦ МГУ - портал актуальной аналитики о странах Центральной Азии. Нас читают в Казахстане (60% аудитории), Кыргызстане (13%), России (10%), Узбекистане (5%), Таджикистане (2%). 
-								</p>
-								<p>
-									<b>Для более подробной информации:</b>
-									<br> 
-									Александра Перминова, редактор:
-									<br>
-									<a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
-								</p>
+							<p class="man__name">
+								Эргали Гер
+							</p>
+							<p class="man__discript">
+								главный редактор
+							</p>
+						</article>
+						<article class="man">
+							<div class="man__thumb">
+								<img src="http://placehold.it/900x600" alt="Фото">
 							</div>
-						</div>
+							<p class="man__name">
+								Эргали Гер
+							</p>
+							<p class="man__discript">
+								главный редактор
+							</p>
+						</article>
+						<article class="man">
+							<div class="man__thumb">
+								<img src="http://placehold.it/900x600" alt="Фото">
+							</div>
+							<p class="man__name">
+								Эргали Гер
+							</p>
+							<p class="man__discript">
+								главный редактор
+							</p>
+						</article>
+						<article class="man">
+							<div class="man__thumb">
+								<img src="http://placehold.it/900x600" alt="Фото">
+							</div>
+							<p class="man__name">
+								Эргали Гер
+							</p>
+							<p class="man__discript">
+								главный редактор
+							</p>
+						</article>
+						<article class="man">
+							<div class="man__thumb">
+								<img src="http://placehold.it/900x600" alt="Фото">
+							</div>
+							<p class="man__name">
+								Эргали Гер
+							</p>
+							<p class="man__discript">
+								главный редактор
+							</p>
+						</article>
+						<article class="man">
+							<div class="man__thumb">
+								<img src="http://placehold.it/900x600" alt="Фото">
+							</div>
+							<p class="man__name">
+								Эргали Гер
+							</p>
+							<p class="man__discript">
+								главный редактор
+							</p>
+						</article>
+						<div class="article--clear-25"></div>
+						<div class="article--clear-25"></div>
+						<div class="article--clear-25"></div>
 					</div>
 				</section>
+				<section class="partners">
+	<h2 class="title title--center partners__title">
+		Партнеры
+	</h2>
+	<div class="partners__items">
+		<a href="" class="partners__item">
+			<img src="img/partner-1.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-2.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-3.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-4.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-5.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-6.png" alt="Партнер">
+		</a>
+	</div>
+</section>
 			</div>
 		</div>
 	</main>
 	<footer class="footer">
 	<div class="container footer__container">
-		<div class="footer__content">
+		<div class="footer__content footer__content--dark">
 			<div class="footer__columns footer__columns--1">
 				<a href="#" class="social__link">
 					<svg class="icon-svg">
