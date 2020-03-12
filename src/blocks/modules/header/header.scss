@@ -191,13 +191,16 @@
 		top: 100%;
 		left: 0px;
 		right: 0px;
-		background-color: $dark;
+		background-color: $blue;
 		z-index: 3;
 		overflow: hidden;
 		max-height: 0px;
 		transition: 0.3s all;
 		&--red {
 			background-color: $red-dark;
+		}
+		&--dark {
+			background-color: $dark;
 		}
 	}
 	&__drop-content {
