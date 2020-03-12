@@ -26,73 +26,75 @@
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	@@include("../blocks/modules/header/header.html")
-	<main class="content">
-		<div class="container">
-			<div class="layout layout--block">
-				<section class="write">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
+	<div class="page">
+		@@include("../blocks/modules/header/header.html")
+		<main class="content">
+			<div class="container">
+				<div class="layout layout--block">
+					<section class="write">
+						<div class="breadcrumbs">
+							<a href="" class="breadcrumbs__link">
+								Главная
+							</a>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+							</svg>
+							<span class="breadcrumbs__link breadcrumbs__link--static">
+								Связаться с редакцией
+							</span>
+						</div>
+						<h2 class="title write__title">
 							Связаться с редакцией
-						</span>
-					</div>
-					<h2 class="title write__title">
-						Связаться с редакцией
-					</h2>
-					<form action="" class="write__form">
-						<div class="write__columns">
-							<div class="write__column write__column--left">
-								<label class="write__label">
-									<p class="write__name">
-										Ваше имя
-									</p>
-									<input type="text" class="write__input">
-								</label>
-								<label class="write__label">
-									<p class="write__name">
-										Ваш e-mail
-									</p>
-									<input type="email" class="write__input">
-								</label>
-							</div>
-							<div class="write__column write__column--right">
-								<label class="write__label">
-									<p class="write__name">
-										Ваш e-mail
-									</p>
-									<textarea class="write__textarea"></textarea>
-								</label>
-							</div>
-						</div>
-						<div class="write__control">
-							<label class="checkbox">
-								<input type="checkbox" class="checkbox__input" checked>
-								<div class="checkbox__icon">
-									<svg class="icon-svg">
-										<use xlink:href="img/sprites/sprite.svg#checkbox"></use>
-									</svg>
+						</h2>
+						<form action="" class="write__form">
+							<div class="write__columns">
+								<div class="write__column write__column--left">
+									<label class="write__label">
+										<p class="write__name">
+											Ваше имя
+										</p>
+										<input type="text" class="write__input">
+									</label>
+									<label class="write__label">
+										<p class="write__name">
+											Ваш e-mail
+										</p>
+										<input type="email" class="write__input">
+									</label>
 								</div>
-								<span class="checkbox__text">
-									Я подтверждаю своё согласие с политикой персональных данных
-								</span>
-							</label>
-							<button class="write__btn">
-								Отправить
-							</button>
-						</div>
-					</form>
-				</section>
+								<div class="write__column write__column--right">
+									<label class="write__label">
+										<p class="write__name">
+											Ваш e-mail
+										</p>
+										<textarea class="write__textarea"></textarea>
+									</label>
+								</div>
+							</div>
+							<div class="write__control">
+								<label class="checkbox">
+									<input type="checkbox" class="checkbox__input" checked>
+									<div class="checkbox__icon">
+										<svg class="icon-svg">
+											<use xlink:href="img/sprites/sprite.svg#checkbox"></use>
+										</svg>
+									</div>
+									<span class="checkbox__text">
+										Я подтверждаю своё согласие с политикой персональных данных
+									</span>
+								</label>
+								<button class="write__btn">
+									Отправить
+								</button>
+							</div>
+						</form>
+					</section>
+				</div>
 			</div>
-		</div>
-	</main>
-	@@include("../blocks/modules/footer/footer.html")
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+		<script src="js/vendor.js"></script>
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>

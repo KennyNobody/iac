@@ -1,6 +1,6 @@
 .page-events {
+	margin-bottom: 40px;
 	&__articles {
-		margin-bottom: 58px;
 	}
 	&__old-articles {
 		display: flex;
@@ -15,6 +15,10 @@
 	color: $dark;
 	text-decoration: none;
 	margin-bottom: 12px;
+	@include r(580) {
+		margin-bottom: 20px;
+		display: block;
+	}
 	&:hover {
 		opacity: 0.7;
 	}
@@ -24,16 +28,34 @@
 			width: calc(100% / 12 * 1 - 8px);
 			color: $red-light;
 			font-family: $font-title;
+			@include r(1100) {
+				margin-right: 20px;
+				flex-shrink: 0;
+				width: 75px;
+				display: block;
+			}
+			@include r(580) {
+				display: block;
+				width: 100%;
+			}
 		}
 		&--2 {
 			width: calc(100% / 12 * 4 - 8px);
 			height: 192px;
+			@include r(1100) {
+				display: none;
+			}
 		}
 		&--3 {
 			width: calc(100% / 12 * 7 - 8px);
 			display: flex;
 			justify-content: space-between;
 			flex-direction: column;
+			@include r(1100) {
+				width: auto;
+				flex-grow: 1;
+				min-width: 0px;
+			}
 		}
 	}
 	&__thumb {
@@ -50,6 +72,11 @@
 		font-size: 30px;
 		font-family: $font-title;
 		margin-bottom: 12px;
+		@include r(1080) {
+			overflow: visible;
+			display: block;
+			margin-bottom: 15px;
+		}
 	}
 	&__text {
 		flex-grow: 1;
@@ -57,6 +84,10 @@
 		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+		@include r(1100) {
+			display: block;
+			margin-bottom: 15px;
+		}
 	}
 	&__footer{
 		color: $light;
@@ -67,16 +98,45 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		@include r(580) {
+			overflow: visible;
+			white-space: normal;
+			padding: 8px 10px; 
+		}
+		br {
+			display: none;
+			@include r(580) {
+				display: block;
+			}
+		}
 	}
 	&__day {
 		font-weight: 500;
 		font-size: 70px;
 		line-height: 1.0;
+		@include r(580) {
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 1.4;
+			display: inline-block;
+		}
 	}
 	&__mounth {
 		font-size: 22px;
+		@include r(580) {
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 1.4;
+			display: inline-block;
+		}
 	}
 	&__year {
 		font-size: 22px;
+		@include r(580) {
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 1.4;
+			display: inline-block;
+		}
 	}
 }

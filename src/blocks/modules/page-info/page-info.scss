@@ -1,14 +1,20 @@
 .info {
+	margin-bottom: 60px;
 	&__title {
 		margin-bottom: 20px;
 	}
 	&__columns {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 100px;
+		@include r(1100) {
+			display: block;
+		}
 	}
 	&__column {
 		width: calc(50% - 6px);
+		@include r(1100) {
+			margin-bottom: 30px;
+		}
 	}
 	&__content {
 		p {

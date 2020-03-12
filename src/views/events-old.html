@@ -26,131 +26,133 @@
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	@@include("../blocks/modules/header/header.html")
-	<main class="content">
-		<div class="container">
-			<div class="layout layout--block">
-				<section class="page-events">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
+	<div class="page">
+		@@include("../blocks/modules/header/header.html")
+		<main class="content">
+			<div class="container">
+				<div class="layout layout--block">
+					<section class="page-events">
+						<div class="breadcrumbs">
+							<a href="" class="breadcrumbs__link">
+								Главная
+							</a>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+							</svg>
+							<span class="breadcrumbs__link breadcrumbs__link--static">
+								Мероприятия (прошедшие)
+							</span>
+						</div>
+						<h2 class="title partners__title">
 							Мероприятия (прошедшие)
-						</span>
-					</div>
-					<h2 class="title partners__title">
-						Мероприятия (прошедшие)
-					</h2>
-					<form action="" class="form page-experts__form-top">
-						<input type="text" class="form__search" placeholder="Поиск">
-						<button class="form__btn">
-							Найти
-						</button>
-						<a href="#" class="form__reset">
-							Сбросить фильтр
-						</a>
-						<div class="break form__break"></div>
-						<select class="form__select">
-							<option selected value="">Период, с</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-						</select>
-						<select class="form__select">
-							<option selected value="">Период, по</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-						</select>
-					</form>
-					<div class="page-events__old-articles">
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<div class="article--clear-25"></div>
-						<div class="article--clear-25"></div>
-					</div>
+						</h2>
+						<form action="" class="form page-experts__form-top">
+							<select class="form__select form__select--50">
+								<option selected value="">Период, с</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+							</select>
+							<select class="form__select form__select--50">
+								<option selected value="">Период, по</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+							</select>
+							<div class="break form__break"></div>
+							<input type="text" class="form__search" placeholder="Поиск">
+							<button class="form__btn">
+								Найти
+							</button>
+							<a href="#" class="form__reset">
+								Сбросить фильтр
+							</a>
+						</form>
+						<div class="page-events__old-articles">
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<div class="article--clear-25"></div>
+							<div class="article--clear-25"></div>
+						</div>
+					</section>
 					<div class="pagination">
 						<a href="" class="pagination__link pagination__link--start">
 							В начало
@@ -175,12 +177,12 @@
 							В конец
 						</a>
 					</div>
-				</section>
+				</div>
 			</div>
-		</div>
-	</main>
-	@@include("../blocks/modules/footer/footer.html")
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+		<script src="js/vendor.js"></script>
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>

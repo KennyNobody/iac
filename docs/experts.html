@@ -26,7 +26,8 @@
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	<header class="header">
+	<div class="page">
+		<header class="header">
 	<div class="container header__container">
 		<a href="/" class="header__logo">
 			<svg class="icon-svg">
@@ -120,7 +121,7 @@
 							<a href="events.html">
 								Актуально
 							</a>
-							<a href="events.html">
+							<a href="events-old.html">
 								Как это было
 							</a>
 						</div>
@@ -129,17 +130,19 @@
 				<a class="nav__link" href="news.html">
 					Новости
 				</a>
-				<a href="han-index.html" class="nav__box nav__box--red">
-					Хан-тенгри
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
+				<span class="nav__box nav__box--red">
+					<a href="han-index.html" class="nav__drop-link">
+						Хан-Тенгри
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#drop"></use>
+						</svg>
+					</a>
 					<div class="nav__drop nav__drop--red">
 						<div class="nav__drop-content">
 							<a href="han-single.html">
 								О журнале
 							</a>
-							<a href="nan-team.html">
+							<a href="han-team.html">
 								Команда
 							</a>
 							<a href="han-news.html">
@@ -156,261 +159,265 @@
 							</a>
 						</div>
 					</div>
-				</a>
+				</span>
 			</nav>
 		</div>
+		<a href="#mobile-menu" class="header__burger">
+			<svg class="icon-svg">
+				<use xlink:href="img/sprites/sprite.svg#menu"></use>
+			</svg>
+		</a>
 	</div>
 </header>
-	<main class="content">
-		<div class="container">
-			<div class="layout layout--block">
-				<section class="page-experts">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
-							Эксперты
-						</span>
-					</div>
-					<h2 class="title partners__title">
-						Эксперты
-					</h2>
-					<form action="" class="form page-experts__form-top">
-						<input type="text" class="form__search" placeholder="Поиск эксперта">
-						<button class="form__btn">
-							Найти
-						</button>
-						<a href="#" class="form__reset">
-							Сбросить фильтр
-						</a>
-						<div class="break form__break"></div>
-						<label class="checkbox">
-							<input type="checkbox" class="checkbox__input">
-							<div class="checkbox__icon">
-								<svg class="icon-svg">
-									<use xlink:href="img/sprites/sprite.svg#checkbox"></use>
-								</svg>
-							</div>
-							<span class="checkbox__text">
-								Член ИАЦ
+		<main class="content">
+			<div class="container">
+				<div class="layout layout--block">
+					<section class="page-experts">
+						<div class="breadcrumbs">
+							<a href="" class="breadcrumbs__link">
+								Главная
+							</a>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+							</svg>
+							<span class="breadcrumbs__link breadcrumbs__link--static">
+								Эксперты
 							</span>
-						</label>
-					</form>
-					<form action="" class="form page-experts__form-bottom">
-						<select class="form__select form__select--50">
-							<option disabled selected="" value="">Регион</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-						</select>
-						<select class="form__select form__select--50">
-							<option disabled selected="" value="">Фамилия</option>
-							<option disabled>А</option>
-							<option value="1">Авдеев</option>
-							<option value="2">Агафонов</option>
-							<option value="3">Антонов</option>
-							<option disabled>Б</option>
-							<option value="1">Барковский</option>
-							<option value="2">Баранкин</option>
-							<option value="3">Балабанов</option>
-						</select>
-						<select class="form__select form__select--100">
-							<option disabled selected="" value="">Тема</option>
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-						</select>
-					</form>
-					<div class="page-experts__articles">
-						<article class="expert">
-							<div class="expert__column expert__column--thumb">
-								<img src="http://placehold.it/600x900" alt="Аватар">
-							</div>
-							<div class="expert__column expert__column--info">
-								<h2 class="expert__title">
-									Роман Болотников
-								</h2>
-								<div class="expert__text">
-									<p>
-										<strong>Должность:</strong>
-										Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
-									</p>
+						</div>
+						<h2 class="title partners__title">
+							Эксперты
+						</h2>
+						<form action="" class="form page-experts__form">
+							<select class="form__select form__select--50">
+								<option disabled selected="" value="">Регион</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+							</select>
+							<select class="form__select form__select--50">
+								<option disabled selected="" value="">Фамилия</option>
+								<option disabled>А</option>
+								<option value="1">Авдеев</option>
+								<option value="2">Агафонов</option>
+								<option value="3">Антонов</option>
+								<option disabled>Б</option>
+								<option value="1">Барковский</option>
+								<option value="2">Баранкин</option>
+								<option value="3">Балабанов</option>
+							</select>
+							<select class="form__select form__select--100">
+								<option disabled selected="" value="">Тема</option>
+								<option value="1">Пункт 1</option>
+								<option value="2">Пункт 2</option>
+								<option value="3">Пункт 3</option>
+							</select>
+							<input type="text" class="form__search" placeholder="Поиск эксперта">
+							<button class="form__btn">
+								Найти
+							</button>
+							<a href="#" class="form__reset">
+								Сбросить фильтр
+							</a>
+							<div class="break form__break"></div>
+							<label class="checkbox">
+								<input type="checkbox" class="checkbox__input">
+								<div class="checkbox__icon">
+									<svg class="icon-svg">
+										<use xlink:href="img/sprites/sprite.svg#checkbox"></use>
+									</svg>
 								</div>
-							</div>
-							<div class="expert__column expert__column--publication">
-								<h4 class="expert__subtitle">
-									Последние публикации:
-								</h4>
-								<div class="expert__publication-text">
-									<p>
-										Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
-									</p>
-									<p>
-										Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-									</p>
-									<p>
-										Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
-									</p>
-								</div>
-								<a href="news.html" class="expert__link">
-									Все публикации
+								<span class="checkbox__text">
+									Член ИАЦ
+								</span>
+							</label>
+						</form>
+						<div class="page-experts__articles">
+							<article class="expert">
+								<a href="expert.html" class="expert__column expert__column--thumb">
+									<img src="http://placehold.it/600x900" alt="Аватар">
 								</a>
-							</div>
-						</article>
-						<article class="expert">
-							<div class="expert__column expert__column--thumb">
-								<img src="http://placehold.it/600x900" alt="Аватар">
-							</div>
-							<div class="expert__column expert__column--info">
-								<h2 class="expert__title">
-									Роман Болотников
-								</h2>
-								<div class="expert__text">
-									<p>
-										<strong>Должность:</strong>
-										Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
-									</p>
+								<div class="expert__column expert__column--info">
+									<a href="expert.html" class="expert__title">
+										Роман Болотников
+									</a>
+									<div class="expert__text">
+										<p>
+											<strong>Должность:</strong>
+											Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="expert__column expert__column--publication">
-								<h4 class="expert__subtitle">
-									Последние публикации:
-								</h4>
-								<div class="expert__publication-text">
-									<p>
-										Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
-									</p>
-									<p>
-										Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-									</p>
-									<p>
-										Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
-									</p>
+								<div class="expert__column expert__column--publication">
+									<h4 class="expert__subtitle">
+										Последние публикации:
+									</h4>
+									<div class="expert__publication-text">
+										<p>
+											Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
+										</p>
+										<p>
+											Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+										</p>
+										<p>
+											Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
+										</p>
+									</div>
+									<a href="news.html" class="expert__link">
+										Все публикации
+									</a>
 								</div>
-								<a href="news.html" class="expert__link">
-									Все публикации
+							</article>
+							<article class="expert">
+								<a href="expert.html" class="expert__column expert__column--thumb">
+									<img src="http://placehold.it/600x900" alt="Аватар">
 								</a>
-							</div>
-						</article>
-						<article class="expert">
-							<div class="expert__column expert__column--thumb">
-								<img src="http://placehold.it/600x900" alt="Аватар">
-							</div>
-							<div class="expert__column expert__column--info">
-								<h2 class="expert__title">
-									Роман Болотников
-								</h2>
-								<div class="expert__text">
-									<p>
-										<strong>Должность:</strong>
-										Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
-									</p>
+								<div class="expert__column expert__column--info">
+									<a href="expert.html" class="expert__title">
+										Роман Болотников
+									</a>
+									<div class="expert__text">
+										<p>
+											<strong>Должность:</strong>
+											Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="expert__column expert__column--publication">
-								<h4 class="expert__subtitle">
-									Последние публикации:
-								</h4>
-								<div class="expert__publication-text">
-									<p>
-										Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
-									</p>
-									<p>
-										Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-									</p>
-									<p>
-										Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
-									</p>
+								<div class="expert__column expert__column--publication">
+									<h4 class="expert__subtitle">
+										Последние публикации:
+									</h4>
+									<div class="expert__publication-text">
+										<p>
+											Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
+										</p>
+										<p>
+											Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+										</p>
+										<p>
+											Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
+										</p>
+									</div>
+									<a href="news.html" class="expert__link">
+										Все публикации
+									</a>
 								</div>
-								<a href="news.html" class="expert__link">
-									Все публикации
+							</article>
+							<article class="expert">
+								<a href="expert.html" class="expert__column expert__column--thumb">
+									<img src="http://placehold.it/600x900" alt="Аватар">
 								</a>
-							</div>
-						</article>
-						<article class="expert">
-							<div class="expert__column expert__column--thumb">
-								<img src="http://placehold.it/600x900" alt="Аватар">
-							</div>
-							<div class="expert__column expert__column--info">
-								<h2 class="expert__title">
-									Роман Болотников
-								</h2>
-								<div class="expert__text">
-									<p>
-										<strong>Должность:</strong>
-										Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
-									</p>
+								<div class="expert__column expert__column--info">
+									<a href="expert.html" class="expert__title">
+										Роман Болотников
+									</a>
+									<div class="expert__text">
+										<p>
+											<strong>Должность:</strong>
+											Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="expert__column expert__column--publication">
-								<h4 class="expert__subtitle">
-									Последние публикации:
-								</h4>
-								<div class="expert__publication-text">
-									<p>
-										Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
-									</p>
-									<p>
-										Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-									</p>
-									<p>
-										Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
-									</p>
+								<div class="expert__column expert__column--publication">
+									<h4 class="expert__subtitle">
+										Последние публикации:
+									</h4>
+									<div class="expert__publication-text">
+										<p>
+											Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
+										</p>
+										<p>
+											Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+										</p>
+										<p>
+											Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
+										</p>
+									</div>
+									<a href="news.html" class="expert__link">
+										Все публикации
+									</a>
 								</div>
-								<a href="news.html" class="expert__link">
-									Все публикации
+							</article>
+							<article class="expert">
+								<a href="expert.html" class="expert__column expert__column--thumb">
+									<img src="http://placehold.it/600x900" alt="Аватар">
 								</a>
-							</div>
-						</article>
-						<article class="expert">
-							<div class="expert__column expert__column--thumb">
-								<img src="http://placehold.it/600x900" alt="Аватар">
-							</div>
-							<div class="expert__column expert__column--info">
-								<h2 class="expert__title">
-									Роман Болотников
-								</h2>
-								<div class="expert__text">
-									<p>
-										<strong>Должность:</strong>
-										Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
-									</p>
+								<div class="expert__column expert__column--info">
+									<a href="expert.html" class="expert__title">
+										Роман Болотников
+									</a>
+									<div class="expert__text">
+										<p>
+											<strong>Должность:</strong>
+											Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="expert__column expert__column--publication">
-								<h4 class="expert__subtitle">
-									Последние публикации:
-								</h4>
-								<div class="expert__publication-text">
-									<p>
-										Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
-									</p>
-									<p>
-										Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
-									</p>
-									<p>
-										Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
-									</p>
+								<div class="expert__column expert__column--publication">
+									<h4 class="expert__subtitle">
+										Последние публикации:
+									</h4>
+									<div class="expert__publication-text">
+										<p>
+											Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
+										</p>
+										<p>
+											Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+										</p>
+										<p>
+											Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
+										</p>
+									</div>
+									<a href="news.html" class="expert__link">
+										Все публикации
+									</a>
 								</div>
-								<a href="news.html" class="expert__link">
-									Все публикации
+							</article>
+							<article class="expert">
+								<a href="expert.html" class="expert__column expert__column--thumb">
+									<img src="http://placehold.it/600x900" alt="Аватар">
 								</a>
-							</div>
-						</article>
-					</div>
+								<div class="expert__column expert__column--info">
+									<a href="expert.html" class="expert__title">
+										Роман Болотников
+									</a>
+									<div class="expert__text">
+										<p>
+											<strong>Должность:</strong>
+											Директор армянского социологического центра «Социометр», почетный профессор российско-армянского университета
+										</p>
+									</div>
+								</div>
+								<div class="expert__column expert__column--publication">
+									<h4 class="expert__subtitle">
+										Последние публикации:
+									</h4>
+									<div class="expert__publication-text">
+										<p>
+											Кыргызско-таджикские переговоры по границе: «обречены жить в мире и согласии»	
+										</p>
+										<p>
+											Неисполнение Закона о языках – гарантия межнационального согласия в Казахстане?
+										</p>
+										<p>
+											Посол России поблагодарил Кыргызстан за борьбу с фальсификацией истории
+										</p>
+									</div>
+									<a href="news.html" class="expert__link">
+										Все публикации
+									</a>
+								</div>
+							</article>
+						</div>
+					</section>
 					<div class="pagination">
 						<a href="" class="pagination__link pagination__link--start">
 							В начало
@@ -435,11 +442,37 @@
 							В конец
 						</a>
 					</div>
-				</section>
+				</div>
 			</div>
-		</div>
-	</main>
-	<footer class="footer">
+		</main>
+		<footer class="footer">
+	<div class="container">
+		<section class="partners">
+	<h2 class="title title--center partners__title">
+		Партнеры
+	</h2>
+	<div class="partners__items">
+		<a href="" class="partners__item">
+			<img src="img/partner-1.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-2.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-3.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-4.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-5.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-6.png" alt="Партнер">
+		</a>
+	</div>
+</section>
+	</div>
 	<div class="container footer__container">
 		<div class="footer__content">
 			<div class="footer__columns footer__columns--1">
@@ -487,6 +520,7 @@
 					<a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
 				</div>
 			</div>
+			<div class="footer__break"></div>
 			<div class="footer__columns footer__columns--2">
 				<div class="footer__nav">
 					<a href="">
@@ -582,7 +616,42 @@
 		</div>
 	</div>
 </footer>
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+<nav id="mobile-menu">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="experts.html">Эксперты</a></li>
+		<li><span>Аналитика</span>
+			<ul>
+				<li><a href="analitic.html">Политкухня</a></li>
+				<li><a href="analitic.html">Мировидение</a></li>
+				<li><a href="analitic.html">О делах</a></li>
+				<li><a href="analitic.html">История</a></li>
+			</ul>
+		</li>
+		<li><span>Мероприятия</span>
+			<ul>
+				<li><a href="events.html">Актуально</a></li>
+				<li><a href="events-old.html">Команда</a></li>
+			</ul>
+		</li>
+		<li><a href="news.html">Новости</a></li>
+		<li><a href="han-index.html">Хан-Тенгри</a>
+			<ul>
+				<li><a href="han-single.html">О журнале</a></li>
+				<li><a href="han-team.html">Команда</a></li>
+				<li><a href="han-news.html">Мнения</a></li>
+				<li><a href="han-news.html">Ориенталии</a></li>
+				<li><a href="han-news.html">Культура</a></li>
+				<li><a href="han-news.html">История</a></li>
+			</ul>
+		</li>
+		<li><a href="single-news.html">О центре</a></li>
+		<li><a href="info.html">Контакты</a></li>
+		<li><a href="form.html">Написать нам</a></li>
+	</ul>
+</nav>
+		<script src="js/vendor.js"></script>
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>

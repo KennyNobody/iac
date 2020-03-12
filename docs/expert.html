@@ -26,7 +26,8 @@
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	<header class="header">
+	<div class="page">
+		<header class="header">
 	<div class="container header__container">
 		<a href="/" class="header__logo">
 			<svg class="icon-svg">
@@ -120,7 +121,7 @@
 							<a href="events.html">
 								Актуально
 							</a>
-							<a href="events.html">
+							<a href="events-old.html">
 								Как это было
 							</a>
 						</div>
@@ -129,17 +130,19 @@
 				<a class="nav__link" href="news.html">
 					Новости
 				</a>
-				<a href="han-index.html" class="nav__box nav__box--red">
-					Хан-тенгри
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#drop"></use>
-					</svg>
+				<span class="nav__box nav__box--red">
+					<a href="han-index.html" class="nav__drop-link">
+						Хан-Тенгри
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#drop"></use>
+						</svg>
+					</a>
 					<div class="nav__drop nav__drop--red">
 						<div class="nav__drop-content">
 							<a href="han-single.html">
 								О журнале
 							</a>
-							<a href="nan-team.html">
+							<a href="han-team.html">
 								Команда
 							</a>
 							<a href="han-news.html">
@@ -156,256 +159,288 @@
 							</a>
 						</div>
 					</div>
-				</a>
+				</span>
 			</nav>
 		</div>
+		<a href="#mobile-menu" class="header__burger">
+			<svg class="icon-svg">
+				<use xlink:href="img/sprites/sprite.svg#menu"></use>
+			</svg>
+		</a>
 	</div>
 </header>
-	<main class="content">
-		<div class="container">
-			<div class="layout layout--block">
-				<section class="page-expert">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
-							Роман Болотников
-						</span>
-					</div>
-					<h2 class="title page-expert__title">
-						Роман Болотников
-					</h2>
-					<div class="page-expert__columns">
-						<div class="page-expert__column page-expert__column--3">
-							<img src="http://placehold.it/600x900" alt="Аватар" class="page-expert__img">
-						</div>
-						<div class="page-expert__column page-expert__column--9">
-							<div class="page-expert__content">
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Дата рождения
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											22 ноября 1975
-										</p>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Где родился
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											в Москве
-										</p>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Где и чему учился
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											сначала французская спецшкола, потом факультет международных экономических отношений и магистратура европейского права МГИМО.
-										</p>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Где и как работал
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											Прошел стажировку в Бельгии на заводе "DuPont", вернулся в Москву, организовал собственную фирму. Имею опыт работы в западных компаниях, банковской сфере, нефтянке... Но все это неинтересно и скучно.
-										</p>
-										<p>
-											В 27 лет кардинально поменял жизнь. Понял, что основные человеческие ценности - это свобода, искренность и взаимопомощь. Ушел из бизнеса и начал строить систему, которая бы объединила личный успех и деятельность на благо общества.
-										</p>
-										<p>
-											Занимался разработкой и реализацией больших социальных системных проектов. После долгих экспериментов в сфере благотворительности, взаимодействия с корпорациями, волонтерами, интернет-сообществом сформулировал основной принцип Экономики заслуг: чем больше пользы приносишь обществу, тем больше получаешь для себя.
-										</p>
-										<p>
-											Создал сначала неформальный клуб единомышленников, потом организовал Лабораторию социальных инноваций Cloudwatcher.
-										</p>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Достижения
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											Наша Лаборатория Cloudwatcher за несколько лет стала крупнейшим в России системным интегратором гуманитарной помощи. Мы передали товаров более чем на 336 млн. рублей. Более 23 тыс. человек по всей России приняли участие в волонтерских проектах Лаборатории.
-										</p>
-										<p>
-											Сейчас мы пилотируем платформу Банка заслуг. Это механизм, позволяющий заключить новый социальный договор и организовать эффективную совместную деятельность любого количества и типа участников.
-										</p>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Дела общественные
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											Сейчас занимаюсь разработкой Инициативы Экономики заслуг и Банка заслуг как ее технологической платформы.
-										</p>
-										<p>
-											Суть инициативы сводится к следующему. Давайте организуем жизнь таким образом, чтобы мы сами (а не узкий слой людей, принимающих решения, которых примерно 0.1%) могли выявлять заслуженных. И эти заслуженные люди, получали бы максимальные возможности и преимущества при:
-										</p>
-										<ul>
-											<li>
-												- распределении контрактов от государства,
-											</li>
-											<li>
-												- получении заказов от коммерческих компаний,
-											</li>
-											<li>
-												- распределении должностей в органах государственной власти и госучреждениях,
-											</li>
-											<li>
-												- устройстве на работу в крупные корпорации,
-											</li>
-											<li>
-												- получении налоговых и иных льгот,
-											</li>
-											<li>
-												- доступе к различным видам ресурсов и т.д. и т.п.
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										Мне интересно
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											Жить
-										</p>
-									</div>
-								</div>
-								<div class="expert-block">
-									<div class="expert-block__column expert-block__column--left">
-										И вообще...
-									</div>
-									<div class="expert-block__column expert-block__column--right">
-										<p>
-											<a href="www.cloudwatcher.ru">www.cloudwatcher.ru</a>
-										</p>
-									</div>
-								</div>
-							</div>
-							<a href="experts.html" class="page-expert__control">
-								<svg class="icon-svg">
-									<use xlink:href="img/sprites/sprite.svg#arrow-prev"></use>
-								</svg>
-								<span>
-									Назад
-								</span>
+		<main class="content">
+			<div class="container">
+				<div class="layout layout--block">
+					<section class="page-expert">
+						<div class="breadcrumbs">
+							<a href="index.html" class="breadcrumbs__link">
+								Главная
 							</a>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+							</svg>
+							<a href="experts.html" class="breadcrumbs__link">
+								Эксперты
+							</a>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+							</svg>
+							<span class="breadcrumbs__link breadcrumbs__link--static">
+								Роман Болотников
+							</span>
 						</div>
-					</div>
-					<div class="page-expert__articles">
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
+						<h2 class="title page-expert__title">
+							Роман Болотников
+						</h2>
+						<div class="page-expert__columns">
+							<div class="page-expert__column page-expert__column--3">
+								<img src="http://placehold.it/600x900" alt="Аватар" class="page-expert__img">
 							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
+							<div class="page-expert__column page-expert__column--9">
+								<div class="page-expert__content">
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Дата рождения
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												22 ноября 1975
+											</p>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Где родился
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												в Москве
+											</p>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Где и чему учился
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												сначала французская спецшкола, потом факультет международных экономических отношений и магистратура европейского права МГИМО.
+											</p>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Где и как работал
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												Прошел стажировку в Бельгии на заводе "DuPont", вернулся в Москву, организовал собственную фирму. Имею опыт работы в западных компаниях, банковской сфере, нефтянке... Но все это неинтересно и скучно.
+											</p>
+											<p>
+												В 27 лет кардинально поменял жизнь. Понял, что основные человеческие ценности - это свобода, искренность и взаимопомощь. Ушел из бизнеса и начал строить систему, которая бы объединила личный успех и деятельность на благо общества.
+											</p>
+											<p>
+												Занимался разработкой и реализацией больших социальных системных проектов. После долгих экспериментов в сфере благотворительности, взаимодействия с корпорациями, волонтерами, интернет-сообществом сформулировал основной принцип Экономики заслуг: чем больше пользы приносишь обществу, тем больше получаешь для себя.
+											</p>
+											<p>
+												Создал сначала неформальный клуб единомышленников, потом организовал Лабораторию социальных инноваций Cloudwatcher.
+											</p>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Достижения
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												Наша Лаборатория Cloudwatcher за несколько лет стала крупнейшим в России системным интегратором гуманитарной помощи. Мы передали товаров более чем на 336 млн. рублей. Более 23 тыс. человек по всей России приняли участие в волонтерских проектах Лаборатории.
+											</p>
+											<p>
+												Сейчас мы пилотируем платформу Банка заслуг. Это механизм, позволяющий заключить новый социальный договор и организовать эффективную совместную деятельность любого количества и типа участников.
+											</p>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Дела общественные
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												Сейчас занимаюсь разработкой Инициативы Экономики заслуг и Банка заслуг как ее технологической платформы.
+											</p>
+											<p>
+												Суть инициативы сводится к следующему. Давайте организуем жизнь таким образом, чтобы мы сами (а не узкий слой людей, принимающих решения, которых примерно 0.1%) могли выявлять заслуженных. И эти заслуженные люди, получали бы максимальные возможности и преимущества при:
+											</p>
+											<ul>
+												<li>
+													- распределении контрактов от государства,
+												</li>
+												<li>
+													- получении заказов от коммерческих компаний,
+												</li>
+												<li>
+													- распределении должностей в органах государственной власти и госучреждениях,
+												</li>
+												<li>
+													- устройстве на работу в крупные корпорации,
+												</li>
+												<li>
+													- получении налоговых и иных льгот,
+												</li>
+												<li>
+													- доступе к различным видам ресурсов и т.д. и т.п.
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											Мне интересно
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												Жить
+											</p>
+										</div>
+									</div>
+									<div class="expert-block">
+										<div class="expert-block__column expert-block__column--left">
+											И вообще...
+										</div>
+										<div class="expert-block__column expert-block__column--right">
+											<p>
+												<a href="www.cloudwatcher.ru">www.cloudwatcher.ru</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<a href="experts.html" class="page-expert__control">
+									<svg class="icon-svg">
+										<use xlink:href="img/sprites/sprite.svg#arrow-prev"></use>
+									</svg>
+									<span>
+										Назад
+									</span>
+								</a>
 							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<a href="single-news.html" class="article article--25">
-							<span class="article__tag">
-								мировидение
-							</span>
-							<div class="article__thumb">
-								<img src="http://placehold.it/900x600" alt="Превью">
-							</div>
-							<div class="article__content">
-								<time class="time article__time">
-									July 13, 2013
-								</time>
-								<h3 class="article__title">
-									Эмомали Рахмон запустил свой процесс транзита власти
-								</h3>
-							</div>
-						</a>
-						<div class="article--clear-25"></div>
-						<div class="article--clear-25"></div>
-					</div>
-				</section>
+						</div>
+						<div class="page-expert__articles">
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<a href="single-news.html" class="article article--25">
+								<span class="article__tag">
+									мировидение
+								</span>
+								<div class="article__thumb">
+									<img src="http://placehold.it/900x600" alt="Превью">
+								</div>
+								<div class="article__content">
+									<time class="time article__time">
+										July 13, 2013
+									</time>
+									<h3 class="article__title">
+										Эмомали Рахмон запустил свой процесс транзита власти
+									</h3>
+								</div>
+							</a>
+							<div class="article--clear-25"></div>
+							<div class="article--clear-25"></div>
+						</div>
+					</section>
+				</div>
 			</div>
-		</div>
-	</main>
-	<footer class="footer">
+		</main>
+		<footer class="footer">
+	<div class="container">
+		<section class="partners">
+	<h2 class="title title--center partners__title">
+		Партнеры
+	</h2>
+	<div class="partners__items">
+		<a href="" class="partners__item">
+			<img src="img/partner-1.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-2.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-3.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-4.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-5.png" alt="Партнер">
+		</a>
+		<a href="" class="partners__item">
+			<img src="img/partner-6.png" alt="Партнер">
+		</a>
+	</div>
+</section>
+	</div>
 	<div class="container footer__container">
 		<div class="footer__content">
 			<div class="footer__columns footer__columns--1">
@@ -453,6 +488,7 @@
 					<a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
 				</div>
 			</div>
+			<div class="footer__break"></div>
 			<div class="footer__columns footer__columns--2">
 				<div class="footer__nav">
 					<a href="">
@@ -548,7 +584,42 @@
 		</div>
 	</div>
 </footer>
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+<nav id="mobile-menu">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="experts.html">Эксперты</a></li>
+		<li><span>Аналитика</span>
+			<ul>
+				<li><a href="analitic.html">Политкухня</a></li>
+				<li><a href="analitic.html">Мировидение</a></li>
+				<li><a href="analitic.html">О делах</a></li>
+				<li><a href="analitic.html">История</a></li>
+			</ul>
+		</li>
+		<li><span>Мероприятия</span>
+			<ul>
+				<li><a href="events.html">Актуально</a></li>
+				<li><a href="events-old.html">Команда</a></li>
+			</ul>
+		</li>
+		<li><a href="news.html">Новости</a></li>
+		<li><a href="han-index.html">Хан-Тенгри</a>
+			<ul>
+				<li><a href="han-single.html">О журнале</a></li>
+				<li><a href="han-team.html">Команда</a></li>
+				<li><a href="han-news.html">Мнения</a></li>
+				<li><a href="han-news.html">Ориенталии</a></li>
+				<li><a href="han-news.html">Культура</a></li>
+				<li><a href="han-news.html">История</a></li>
+			</ul>
+		</li>
+		<li><a href="single-news.html">О центре</a></li>
+		<li><a href="info.html">Контакты</a></li>
+		<li><a href="form.html">Написать нам</a></li>
+	</ul>
+</nav>
+		<script src="js/vendor.js"></script>
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>

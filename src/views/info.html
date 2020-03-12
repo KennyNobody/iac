@@ -26,62 +26,64 @@
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	@@include("../blocks/modules/header/header.html")
-	<main class="content">
-		<div class="container">
-			<div class="layout layout--block">
-				<section class="info">
-					<div class="breadcrumbs">
-						<a href="" class="breadcrumbs__link">
-							Главная
-						</a>
-						<svg class="icon-svg">
-							<use xlink:href="img/sprites/sprite.svg#arrow"></use>
-						</svg>
-						<span class="breadcrumbs__link breadcrumbs__link--static">
-							Контакты
-						</span>
-					</div>
-					<div class="info__columns">
-						<div class="info__column">
-							<h2 class="title info__title">
+	<div class="page">
+		@@include("../blocks/modules/header/header.html")
+		<main class="content">
+			<div class="container">
+				<div class="layout layout--block">
+					<section class="info">
+						<div class="breadcrumbs">
+							<a href="" class="breadcrumbs__link">
+								Главная
+							</a>
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+							</svg>
+							<span class="breadcrumbs__link breadcrumbs__link--static">
 								Контакты
-							</h2>
-							<div class="info__content">
-								<p>
-									НП «Информационно-аналитический центр по изучению общественно-политических процессов на постсоветском пространстве»
-								</p>
-								<p>
-									<b>Адрес:</b> Россия, г. Москва
-									<br>
-									<b>Почта:</b> <a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
-								</p>
+							</span>
+						</div>
+						<div class="info__columns">
+							<div class="info__column">
+								<h2 class="title info__title">
+									Контакты
+								</h2>
+								<div class="info__content">
+									<p>
+										НП «Информационно-аналитический центр по изучению общественно-политических процессов на постсоветском пространстве»
+									</p>
+									<p>
+										<b>Адрес:</b> Россия, г. Москва
+										<br>
+										<b>Почта:</b> <a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
+									</p>
+								</div>
+							</div>
+							<div class="info__column">
+								<h2 class="title info__title">
+									Рекламодателям
+								</h2>
+								<div class="info__content">
+									<p>
+										ИАЦ МГУ - портал актуальной аналитики о странах Центральной Азии. Нас читают в Казахстане (60% аудитории), Кыргызстане (13%), России (10%), Узбекистане (5%), Таджикистане (2%). 
+									</p>
+									<p>
+										<b>Для более подробной информации:</b>
+										<br> 
+										Александра Перминова, редактор:
+										<br>
+										<a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="info__column">
-							<h2 class="title info__title">
-								Рекламодателям
-							</h2>
-							<div class="info__content">
-								<p>
-									ИАЦ МГУ - портал актуальной аналитики о странах Центральной Азии. Нас читают в Казахстане (60% аудитории), Кыргызстане (13%), России (10%), Узбекистане (5%), Таджикистане (2%). 
-								</p>
-								<p>
-									<b>Для более подробной информации:</b>
-									<br> 
-									Александра Перминова, редактор:
-									<br>
-									<a href="mailto:info@ia-centr.ru">info@ia-centr.ru</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
-		</div>
-	</main>
-	@@include("../blocks/modules/footer/footer.html")
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+		<script src="js/vendor.js"></script>
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>

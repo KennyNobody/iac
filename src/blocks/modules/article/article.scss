@@ -1,7 +1,6 @@
 .article {
 	position: relative;
 	display: block;
-	// height: 294px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -44,6 +43,14 @@
 	}
 	&--dark {
 		color: $light;
+		@include r(1100) {
+			color: $dark;
+		}
+	}
+	@include r(1100) {
+		width: 100%;
+		display: block;
+		padding: 20px 20px;
 	}
 	&__tag {
 		position: absolute;
@@ -56,10 +63,21 @@
 		text-transform: uppercase;
 		padding: 4px 8px;
 		z-index: 2;
+		@include r(1100) {
+			position: relative;
+			display: block;
+			background: none;
+			color: $blue;
+			padding: 0px;
+			margin-bottom: 8px;
+		}
 	}
 	&__thumb {
 		height: 192px;
 		flex-shrink: 0;
+		@include r(1100) {
+			display: none;
+		}
 		img {
 			display: block;
 			width: 100%;
@@ -78,16 +96,30 @@
 	&__content {
 		padding: 12px 15px 20px 15px;
 		height: 114px;
+		@include r(1100) {
+			padding: 0px;
+			height: auto;
+		}
 		&--accent {
 			z-index: 2;
 			background-color: rgba(255, 255, 255, 0.8);
+			@include r(1100) {
+				background: none;
+			}
 		}
 		&--accent-dark {
 			background-color: rgba(26, 36, 45, 0.8);
 			color: $light;
+			@include r(1100) {
+				background: none;
+				color: $dark;
+			}
 		}
 		&--dark {
 			background-color: $dark;
+			@include r(1100) {
+				background: none;
+			}
 		}
 	}
 	&__time {
@@ -98,5 +130,9 @@
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;  
 		overflow: hidden;
+		@include r(1100) {
+			overflow: visible;
+			display: block; 
+		}
 	}
 }

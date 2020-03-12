@@ -3,6 +3,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 60px;
+	justify-content: space-between;
 	&__select {
 		width: 340px;
 		height: 40px;
@@ -27,6 +28,9 @@
 		&--50 {
 			width: calc(50% - 6px);
 			margin-right: 0px;
+			@include r(1100) {
+				width: 100%;
+			}
 		}
 		&--100 {
 			width: 100%;
@@ -44,6 +48,10 @@
 		margin-right: 12px;
 		flex-shrink: 0;
 		font-family: $font-title;
+		@include r(1100) {
+			width: 100%;
+			margin-bottom: 12px;
+		}
 	}
 	&__btn {
 		background-color: $blue;
@@ -65,14 +73,24 @@
 		color: $blue-light;
 		font-family: $font-title;
 		font-size: 14px;
+		flex-grow: 1;
+		min-width: 0px;
 		&:hover {
 			color: #5E7384;
 		}
 	}
-	&__break {
-		margin-bottom: 12px;
-	}
 }
+
+// .select2 {
+// 	margin-right: 12px;
+// 	&:last-child {
+// 		margin-right: 0px;
+// 	}
+// 	@include r(1100) {
+// 		width: 100% !important;
+// 		margin-right: 0px;
+// 	}
+// }
 
 .pagination {
 	height: 38px;
@@ -171,6 +189,7 @@
 .checkbox {
 	display: flex;
 	align-items: center;
+	margin-top: 10px;
 	&__input {
 		display: none;
 		&:checked + .checkbox__icon {

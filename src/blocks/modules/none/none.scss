@@ -1,0 +1,38 @@
+.none {
+	&__content {
+		padding-top: 200px;
+		padding-bottom: 150px;
+		padding-left: 350px;
+		background-repeat: no-repeat;
+		background-position: 65px 45px;
+		@include r(1100) {
+			background: none !important;
+			padding-left: 0px;
+			padding-top: 0px;
+			text-align: center;
+			padding-bottom: 120px;
+		}
+	}
+	&__title {
+		font-family: $font-title;
+		font-weight: 500;
+		font-size: 40px;
+		color: $blue;
+		margin-bottom: 14px;
+	}
+	&__text {
+		font-family: $font-title;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $blue-light;
+	}
+	&__ill {
+		display: none;
+		@include r(1100) {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+		}
+	}
+}

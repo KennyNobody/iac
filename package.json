@@ -70,6 +70,7 @@
     "dependencies": {
         "@fancyapps/fancybox": "^3.5.7",
         "jquery": "^3.4.1",
+        "mmenu-js": "^8.5.1",
         "select2": "^4.0.13",
         "smart-grid": "^2.1.2"
     },

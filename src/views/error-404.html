@@ -26,18 +26,18 @@
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body">
-	@@include("../blocks/modules/header/header.html")
-	<main class="content">
-		<div class="container">
-			<div class="layout layout--block">
-				<section class="none">
-					123
-				</section>
+	<div class="page">
+		@@include("../blocks/modules/header/header.html")
+		<main class="content">
+			<div class="container">
+				<div class="layout layout--block">
+					@@include("../blocks/modules/none/none.html")
+				</div>
 			</div>
-		</div>
-	</main>
-	@@include("../blocks/modules/footer/footer.html")
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+		<script src="js/vendor.js"></script>
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>

@@ -1,6 +1,11 @@
 .analitic {
+	margin-bottom: 40px;
 	&__tabs {
 		margin-bottom: 15px;
+		@include r(1100) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 	&__tab {
 		text-transform: uppercase;
@@ -8,6 +13,10 @@
 		text-decoration: none;
 		font-family: $font-title;
 		margin-right: 40px;
+		@include r(1100) {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
 		&:hover {
 			color: #5E7384;
 		}

@@ -1,17 +1,28 @@
 .footer {
 	font-size: 16px;
 	font-family: $font-title;
+	flex-shrink: 0;
 	&__content {
 		background-color: $blue;
 		padding: 40px 20px;
 		display: flex;
 		justify-content: space-between;
 		color: $blue-light;
+		@include r(1100) {
+			flex-wrap: wrap;
+		}
 		&--dark {
 			background-color: #242E36;
 		}
 	}
 	&__columns {
+		@include r(1100) {
+			width: 50%;
+			margin-bottom: 20px;
+		}
+		@include r(480) {
+			width: 100%;
+		}
 		&--1 {
 			width: 245px;
 			flex-shrink: 0;
@@ -21,6 +32,10 @@
 			align-items: center;
 			margin-right: 26px;
 			height: fit-content;
+			@include r(1100) {
+				width: 100%;
+				max-width: 400px;
+			}
 		}
 		&--2 {
 			width: 140px;
@@ -39,12 +54,17 @@
 			width: 140px;
 			flex-shrink: 0;
 		}
-		&--5 {
+		&--6 {
 			
 		}
 	}
-	&__text {
-		
+	&__break {
+		display: none;
+		@include r(1100) {
+			display: block;
+			flex-basis: 100%;
+			height: 0;
+		}
 	}
 	&__btn {
 		background-color: $red-light;
