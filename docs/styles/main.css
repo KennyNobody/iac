@@ -6371,6 +6371,7 @@ a {
 
   .info__column {
     margin-bottom: 30px;
+    width: 100%;
   }
 
   .write__columns {
