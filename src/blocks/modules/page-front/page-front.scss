@@ -40,7 +40,7 @@
     text-decoration: none;
     display: block;
     @include r(1100) {
-        margin-bottom: 0px;
+        // margin-bottom: 0px;
         padding: 35px 20px;
     }
     &:hover {

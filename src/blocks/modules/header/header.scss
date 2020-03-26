@@ -16,14 +16,14 @@
 	&__logo {
 		flex-shrink: 0px;
 		display: block;
-		margin-right: 32px;
+		margin-right: 16px;
 		@include r(1100) {
 			order: -1;
 		}
 		svg {
 			display: block;
 			width: 230px;
-			height: 103px;
+			height: 82px;
 			@include r(580) {
 				width: 160px;
 				height: 72px;

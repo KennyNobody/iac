@@ -69,7 +69,7 @@
 	display: flex;
 	margin-bottom: 4px;
 	align-items: flex-start;
-	@include r(580) {
+	@include r(1100) {
 		display: block;
 	}
 	&__column {
@@ -80,6 +80,9 @@
 			text-transform: uppercase;
 			font-family: $font-title;
 			flex-shrink: 0;
+			@include r(1100) {
+				width: 100%;
+			}
 		}
 		&--right {
 			min-width: 0px;
