@@ -1,14 +1,17 @@
 .expert {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 12px;
-	@include r(580) {
-		display: block;
-		margin-bottom: 35px;
+	margin-bottom: 50px;
+	background-color: #EFF4FA;
+	flex-wrap: wrap;
+	@include r(1100) {
+		// display: block;
+		margin-bottom: 40px;
+		padding: 15px 20px;
 	}
-	&:last-child {
-		margin-bottom: 0px;
-	}
+	// &:last-child {
+	// 	margin-bottom: 0px;
+	// }
 	p {
 		margin-bottom: 1rem;
 	}
@@ -20,7 +23,9 @@
 		&--thumb {
 			width: calc(100% / 12 * 3 - 8px);
 			@include r(1100) {
-				display: none;
+				// display: none;
+				width: 200px;
+				margin-bottom: 25px;
 			}
 			img {
 				display: block;
@@ -35,7 +40,7 @@
 			width: calc(100% / 12 * 5 - 8px);
 			padding: 20px 12px;
 			@include r(1100) {
-				width: 50%;
+				flex-grow: 1;
 			}
 			@include r(580) {
 				width: 100%;
@@ -46,7 +51,8 @@
 			width: calc(100% / 12 * 4 - 8px);
 			padding: 20px 12px;
 			@include r(1100) {
-				width: 50%;
+				width: 100%;
+				padding: 0px;
 			}
 			@include r(580) {
 				width: 100%;

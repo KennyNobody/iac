@@ -1,6 +1,7 @@
 import {$,jQuery} from 'jquery';
 import fancybox from '@fancyapps/fancybox';
 import select2 from 'select2';
+import datepicker from 'air-datepicker';
 import Mmenu from 'mmenu-js';
 import "%modules%/header/header";
 import "%modules%/form/form";

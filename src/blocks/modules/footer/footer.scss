@@ -20,9 +20,9 @@
 			width: 50%;
 			margin-bottom: 20px;
 		}
-		@include r(480) {
-			width: 100%;
-		}
+		// @include r(480) {
+		// 	width: 100%;
+		// }
 		&--1 {
 			width: 245px;
 			flex-shrink: 0;

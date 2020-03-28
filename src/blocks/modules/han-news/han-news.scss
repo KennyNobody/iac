@@ -15,6 +15,9 @@
 	}
 	&__nav {
 		margin-bottom: 20px;
+		@include r(1100) {
+			display: none;
+		}
 	}
 	&__all {
 		color: $blue-light;
@@ -55,50 +58,12 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		&--bit {
-			.article {
-				width: calc(50% - 6px);
-				display: flex;
-				flex-direction: row;
-				height: 90px;
-				color: $light;
-				@include r(1100) {
-					height: auto;
-					width: 100%;
-					display: block;
-				}
-				&__thumb {
-					width: 163px;
-					height: 100%;
-					@include r(1100) {
-						display: none;
-					}
-				}
-				&__content {
-					padding: 8px 12px;
-					flex-grow: 1;
-					min-width: 0px;
-					height: auto;
-					min-height: 90px;
-					background-color: $dark;
-					@include r(1100) {
-						padding: 0px;
-						min-height: 0px;
-						background-color: $light;
-						color: $dark;
-					}
-				}
-				&__title {
-					display: -webkit-box;
-					-webkit-line-clamp: 2;
-					-webkit-box-orient: vertical;  
-					overflow: hidden;
-					@include r(1100) {
-						overflow: visible; 
-						display: block;
-					}
-				}
-			}
+	}
+	&__form {
+		display: none;
+		@include r(1100) {
+			display: block;
+			margin-bottom: 20px;
 		}
 	}
 }

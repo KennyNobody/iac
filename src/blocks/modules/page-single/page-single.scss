@@ -28,6 +28,7 @@
 			width: calc(100% / 12 * 3 - 6px);
 			padding-bottom: 170px;
 			@include r(1100) {
+				display: none;
 				padding-bottom: 0px;
 				order: -1;
 				width: 100%;
@@ -124,6 +125,24 @@
 		top: 15px;
 		@include r(1100) {
 			display: none;
+		}
+	}
+	&__information {
+		display: none;
+		@include r(1100) {
+			display: block;
+			line-height: 1.5;
+			margin-bottom: 20px;
+			b {
+				font-weight: bold;
+				color: $dark;
+			}
+			a {
+				color: $dark;
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }

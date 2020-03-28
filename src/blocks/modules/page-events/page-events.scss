@@ -15,8 +15,8 @@
 	color: $dark;
 	text-decoration: none;
 	margin-bottom: 12px;
-	@include r(580) {
-		margin-bottom: 20px;
+	@include r(1100) {
+		margin-bottom: 60px;
 		display: block;
 	}
 	&:hover {
