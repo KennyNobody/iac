@@ -9,6 +9,11 @@
 		margin-bottom: 40px;
 		padding: 15px 20px;
 	}
+	@include r(750) {
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	// &:last-child {
 	// 	margin-bottom: 0px;
 	// }
@@ -23,14 +28,26 @@
 		&--thumb {
 			width: calc(100% / 12 * 3 - 8px);
 			@include r(1100) {
-				// display: none;
-				width: 200px;
 				margin-bottom: 25px;
+			}
+			@include r(750) {
+				width: 260px;
+				height: 260px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 30px;
+				overflow: hidden;
+				border-radius: 150px; 
 			}
 			img {
 				display: block;
 				width: 100%;
 				height: auto;
+				@include r(750) {
+					object-fit: cover;
+					height: 100%;
+				}
 			}
 			&:hover {
 				opacity: 0.7;

@@ -7141,7 +7141,6 @@ a {
   }
 
   .expert__column--thumb {
-    width: 200px;
     margin-bottom: 25px;
   }
 
@@ -7543,6 +7542,28 @@ a {
 }
 
 @media only screen and (max-width: 750px) {
+  .expert {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .expert__column--thumb {
+    width: 260px;
+    height: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 150px;
+  }
+
+  .expert__column--thumb img {
+    object-fit: cover;
+    height: 100%;
+  }
+
   .article--clear-33 {
     width: calc(50% - 8px);
   }
