@@ -5790,6 +5790,7 @@ a {
   display: block;
   text-decoration: none;
   color: #1A242D;
+  padding-bottom: 8px;
 }
 
 .expert__title:hover {
@@ -7564,6 +7565,16 @@ a {
     height: 100%;
   }
 
+  .expert__column--info {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .expert__title {
+    text-align: center;
+    border-bottom: 1px solid #1A242D;
+  }
+
   .article--clear-33 {
     width: calc(50% - 8px);
   }
@@ -7613,11 +7624,6 @@ a {
 
   .search input {
     width: 100%;
-  }
-
-  .expert__column--info {
-    width: 100%;
-    padding: 0px;
   }
 
   .expert__column--publication {
