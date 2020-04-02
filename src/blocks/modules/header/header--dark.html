@@ -1,3 +1,11 @@
+<script>
+	var socials = {
+		vk: 'https://vk.com/lentach',
+		fb: 'https://web.facebook.com/oldLentach/',
+		twitter: 'https://twitter.com/oldLentach',
+		ok: 'https://ok.ru/'
+	}
+</script>
 <header class="header">
 	<div class="container header__container">
 		<a href="/" class="header__logo">
@@ -132,11 +140,29 @@
 					</div>
 				</span>
 			</nav>
+			<div class="header__mob-search">
+				<form action="" class="header__search search">
+					<input type="text" placeholder="Поиск">
+					<button>
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
 		</div>
-		<a href="#mobile-menu" class="header__burger header__burger--dark">
-			<svg class="icon-svg">
-				<use xlink:href="img/sprites/sprite.svg#menu"></use>
-			</svg>
-		</a>
+		<div class="header__mob-control">
+			<div class="header__open-search header__open-search--dark">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#search"></use>
+				</svg>
+			</div>
+			<div class="header__mob-sep"></div>
+			<a href="#mobile-menu" class="header__burger header__burger--dark">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#menu"></use>
+				</svg>
+			</a>
+		</div>
 	</div>
 </header>

@@ -24,10 +24,20 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
 	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 	<link rel="stylesheet" href="styles/main.css">
+	<script>
+		var socials = {
+			vk: 'https://vk.com/lentach',
+			fb: 'https://web.facebook.com/oldLentach/',
+			twitter: 'https://twitter.com/oldLentach',
+			ok: 'https://ok.ru/',
+			tg: 'ria.ru'
+		}
+	</script>
 </head>
 <body class="body">
 	<div class="page">
-		<header class="header">
+		
+<header class="header">
 	<div class="container header__container">
 		<a href="/" class="header__logo">
 			<svg class="icon-svg">
@@ -161,7 +171,7 @@
 					</div>
 				</span>
 			</nav>
-			<div class="mob-search">
+			<div class="header__mob-search">
 				<form action="" class="header__search search">
 					<input type="text" placeholder="Поиск">
 					<button>
@@ -172,11 +182,20 @@
 				</form>
 			</div>
 		</div>
-		<a href="#mobile-menu" class="header__burger">
-			<svg class="icon-svg">
-				<use xlink:href="img/sprites/sprite.svg#menu"></use>
-			</svg>
-		</a>
+		<div class="header__mob-control">
+			<div class="header__open-search">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#search"></use>
+				</svg>
+			</div>
+			<div class="header__mob-sep"></div>
+			<a href="#mobile-menu" class="header__burger">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#menu"></use>
+				</svg>
+			</a>
+		</div>
+		
 	</div>
 </header>
 		<main class="content">
@@ -422,14 +441,14 @@
 			</ul>
 		</li>
 		<li><a href="news.html">Новости</a></li>
-		<li><a href="han-index.html">Статьи по странам</a>
+		<li><span>Статьи по странам</span>
 			<ul>
-				<li><a href="han-single.html">Россия</a></li>
-				<li><a href="han-team.html">Казахстан</a></li>
-				<li><a href="han-news.html">Кыргызстан</a></li>
-				<li><a href="han-news.html">Туркменистан</a></li>
-				<li><a href="han-news.html">Таджикистан</a></li>
-				<li><a href="han-news.html">Узбекистан</a></li>
+				<li><a href="news.html">Россия</a></li>
+				<li><a href="news.html">Казахстан</a></li>
+				<li><a href="news.html">Кыргызстан</a></li>
+				<li><a href="news.html">Туркменистан</a></li>
+				<li><a href="news.html">Таджикистан</a></li>
+				<li><a href="news.html">Узбекистан</a></li>
 			</ul>
 		</li>
 		<li><a href="han-index.html">Хан-Тенгри</a>

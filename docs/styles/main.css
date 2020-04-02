@@ -5036,6 +5036,12 @@ a {
   display: flex;
 }
 
+.social__link--footer {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
 .man {
   width: calc(25% - 16px);
   font-family: "Oswald", Arial, sans-serif;
@@ -5136,9 +5142,12 @@ a {
   margin-left: 20px;
 }
 
+.header__mob-control {
+  display: none;
+}
+
 .header__burger {
   padding: 20px;
-  display: none;
 }
 
 .header__burger svg {
@@ -5149,6 +5158,38 @@ a {
 
 .header__burger--dark {
   fill: #EFF4FA;
+}
+
+.header__open-search {
+  padding: 20px;
+}
+
+.header__open-search svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.header__open-search--dark {
+  fill: #EFF4FA;
+}
+
+.header__mob-sep {
+  width: 1px;
+  height: 26px;
+  background-color: #0B2867;
+  display: block;
+}
+
+.header__mob-search {
+  max-height: 0px;
+  display: none;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+
+.header__mob-search--open {
+  max-height: 150px;
 }
 
 .search {
@@ -5350,10 +5391,6 @@ a {
 
 .mm-menu {
   font-family: "Oswald", Arial, sans-serif;
-}
-
-.mob-search {
-  max-height: 300px;
 }
 
 .form {
@@ -5609,6 +5646,15 @@ a {
 
 .checkbox__text {
   font-family: "Oswald", Arial, sans-serif;
+}
+
+.checkbox__text a {
+  color: #1A242D;
+  text-decoration: underline;
+}
+
+.checkbox__text a:hover {
+  text-decoration: none;
 }
 
 .footer {
@@ -6164,7 +6210,7 @@ a {
   justify-content: space-between;
 }
 
-.analitic__form {
+.analitic__form--2 {
   display: none;
 }
 
@@ -6594,6 +6640,11 @@ a {
   cursor: pointer;
 }
 
+.write__btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .write__btn:hover {
   background-color: #7A0101;
 }
@@ -6910,6 +6961,7 @@ a {
 
 .none__ill {
   display: none;
+  max-width: 100%;
 }
 
 @media all and (min-width: 0px) {
@@ -7097,6 +7149,7 @@ a {
 
   .header__content {
     width: 100%;
+    padding-top: 25px;
   }
 
   .header__topline {
@@ -7112,9 +7165,18 @@ a {
     display: none;
   }
 
-  .header__burger {
+  .header__mob-control {
     order: -1;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__mob-search {
     display: block;
+  }
+
+  .search input {
+    width: 100%;
   }
 
   .form__select--50 {
@@ -7303,15 +7365,12 @@ a {
     margin-bottom: 10px;
   }
 
-  .analitic__form {
-    display: block;
-  }
-
   .analitic__form--1 {
     margin-bottom: 30px;
   }
 
   .analitic__form--2 {
+    display: block;
     margin-bottom: 30px;
   }
 
@@ -7632,11 +7691,11 @@ a {
   }
 
   .header__burger {
-    padding: 8px;
+    padding: 14px;
   }
 
-  .search input {
-    width: 100%;
+  .header__open-search {
+    padding: 14px;
   }
 
   .expert__column--publication {

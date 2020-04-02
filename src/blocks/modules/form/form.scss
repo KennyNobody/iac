@@ -244,6 +244,13 @@
 	}
 	&__text {
 		font-family: $font-title;
+		a {
+			color: $dark;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 

@@ -176,6 +176,21 @@
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   $('.form__select').select2();
   $('.select-date').datepicker();
+
+  (function toggleCheckboxForm() {
+    var checkbox = document.querySelector('#write__form .checkbox__input');
+    var btn = document.querySelector('#write__form .write__btn');
+
+    if (checkbox && btn) {
+      checkbox.addEventListener('change', function () {
+        if (checkbox.checked == true) {
+          btn.classList.remove('write__btn--disabled');
+        } else {
+          btn.classList.add('write__btn--disabled');
+        }
+      });
+    }
+  })();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -189,13 +204,61 @@
 /***/ (function(module, exports) {
 
 document.addEventListener("DOMContentLoaded", function () {
-  new Mmenu("#mobile-menu", {}, {
+  var linksArray = [];
+
+  (function () {
+    var socLinks = socials;
+    var vkLink, fbLink, twitterLink, okLink;
+
+    if (socials.vk) {
+      vkLink = '<a href="' + socials.vk + '" class="social__link social__link--footer"><svg class="icon-svg"><use xlink:href="img/sprites/sprite.svg#vk"></use></svg></a>';
+      linksArray.push(vkLink);
+    }
+
+    if (socials.fb) {
+      fbLink = '<a href="' + socials.fb + '" class="social__link social__link--footer"><svg class="icon-svg"><use xlink:href="img/sprites/sprite.svg#fb"></use></svg></a>';
+      linksArray.push(fbLink);
+    }
+
+    if (socials.twitter) {
+      twitterLink = '<a href="' + socials.twitter + '" class="social__link social__link--footer"><svg class="icon-svg"><use xlink:href="img/sprites/sprite.svg#twitter"></use></svg></a>';
+      linksArray.push(twitterLink);
+    }
+
+    if (socials.ok) {
+      okLink = '<a href="' + socials.ok + '" class="social__link social__link--footer"><svg class="icon-svg"><use xlink:href="img/sprites/sprite.svg#ok"></use></svg></a>';
+      linksArray.push(okLink);
+    }
+
+    if (socials.tg) {
+      tgLink = '<a href="' + socials.tg + '" class="social__link social__link--footer"><svg class="icon-svg"><use xlink:href="img/sprites/sprite.svg#tg"></use></svg></a>';
+      linksArray.push(tgLink);
+    }
+  })();
+
+  new Mmenu("#mobile-menu", {
+    "navbars": [{
+      "position": "bottom",
+      "content": linksArray
+    }]
+  }, {
     classNames: {
       selected: "active"
     },
     language: 'ru'
   });
 });
+
+(function toggleSearch() {
+  var searchBtn = document.querySelector('.header__open-search');
+  var searchBlock = document.querySelector('.header__mob-search');
+
+  if (searchBtn && searchBlock) {
+    searchBtn.addEventListener('click', function () {
+      searchBlock.classList.toggle('header__mob-search--open');
+    });
+  }
+})();
 
 /***/ }),
 

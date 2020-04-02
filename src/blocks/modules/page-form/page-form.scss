@@ -92,6 +92,10 @@
 		@include r(1100) {
 			order: -1;
 		}
+		&--disabled {
+			opacity: 0.5;
+			pointer-events:none;
+		}
 		&:hover {
 			background-color: $red-dark;
 		}

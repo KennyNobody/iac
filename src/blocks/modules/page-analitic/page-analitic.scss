@@ -32,19 +32,17 @@
 		justify-content: space-between;
 	}
 	&__form {
-		display: none;
-		@include r(1100) {
-			display: block;
-			
-		}
 		&--1 {
 			@include r(1100) {
 				margin-bottom: 30px;
 			}
 		}
 		&--2 {
+			display: none;
 			@include r(1100) {
+				display: block;
 				margin-bottom: 30px;
+
 			}
 		}
 	}

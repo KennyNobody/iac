@@ -40,6 +40,7 @@
 		flex-grow: 1;
 		@include r(1100) {
 			width: 100%;
+			padding-top: 25px;
 		}
 	}
 	&__topline {
@@ -91,15 +92,18 @@
 			margin-right: auto;
 		}
 	}
-	&__burger {
-		padding: 20px;
+	&__mob-control {
 		display: none;
 		@include r(1100) {
 			order: -1;
-			display: block;
+			display: flex;
+			align-items: center;
 		}
+	}
+	&__burger {
+		padding: 20px;
 		@include r(580) {
-			padding: 8px;
+			padding: 14px;
 		}
 		svg {
 			display: block;
@@ -110,13 +114,42 @@
 			fill: $light;
 		}
 	}
+	&__open-search {
+		padding: 20px;
+		@include r(580) {
+			padding: 14px;
+		}
+		svg {
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+		&--dark {
+			fill: $light;
+		}
+	}
+	&__mob-sep {
+		width: 1px;
+		height: 26px;
+		background-color: $blue;
+		display: block;
+	}
+	&__mob-search {
+		max-height: 0px;
+		display: none;
+		overflow: hidden;
+		transition: 0.3s all;
+		@include r(1100) {
+			display: block;
+		}
+		&--open {
+			max-height: 150px;
+		}
+	}
 }
 
 .search {
 	position: relative;
-	@include r(1100) {
-
-	}
 	input {
 		display: block;
 		width: 250px;
@@ -132,7 +165,7 @@
 		&::placeholder {
 			color: $blue-light;
 		}
-		@include r(580) {
+		@include r(1100) {
 			width: 100%;
 		}
 	}
@@ -301,8 +334,4 @@
 
 .mm-menu {
 	font-family: $font-title;
-}
-
-.mob-search {
-	max-height: 300px;
 }

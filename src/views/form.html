@@ -24,6 +24,15 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
 	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 	<link rel="stylesheet" href="styles/main.css">
+	<script>
+		var socials = {
+			vk: 'https://vk.com/lentach',
+			fb: 'https://web.facebook.com/oldLentach/',
+			twitter: 'https://twitter.com/oldLentach',
+			ok: 'https://ok.ru/',
+			tg: 'ria.ru'
+		}
+	</script>
 </head>
 <body class="body">
 	<div class="page">
@@ -46,7 +55,7 @@
 						<h2 class="title write__title">
 							Связаться с редакцией
 						</h2>
-						<form action="" class="write__form">
+						<form action="" class="write__form" id="write__form">
 							<div class="write__columns">
 								<div class="write__column write__column--left">
 									<label class="write__label">
@@ -80,7 +89,7 @@
 										</svg>
 									</div>
 									<span class="checkbox__text">
-										Я подтверждаю своё согласие с политикой персональных данных
+										Я подтверждаю своё согласие с <a target="_blank" href="">политикой персональных данных</a>
 									</span>
 								</label>
 								<button class="write__btn">
