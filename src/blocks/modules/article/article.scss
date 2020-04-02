@@ -87,18 +87,6 @@
 			display: block;
 		}
 	}
-	&--half {
-		width: calc(50% - 6px);
-		display: flex;
-		flex-direction: row;
-		height: 90px;
-		color: $light;
-		@include r(1100) {
-			height: auto;
-			width: 100%;
-			display: block;
-		}
-	}
 	@include r(1100) {
 		width: calc(33% - 8px);
 		display: block;
@@ -108,6 +96,21 @@
 	}
 	@include r(480) {
 		width: 100%;
+	}
+	&--half {
+		width: calc(50% - 6px);
+		display: flex;
+		flex-direction: row;
+		// height: 90px;
+		color: $light;
+		@include r(1100) {
+			height: auto;
+			width: 100%;
+			display: block;
+		}
+		@include r(750) {
+			width: 100%;
+		}
 	}
 	&__tag {
 		position: absolute;
@@ -213,11 +216,11 @@
 			flex-grow: 1;
 			min-width: 0px;
 			height: auto;
-			min-height: 90px;
+			// min-height: 90px;
 			background-color: $dark;
 			@include r(1100) {
 				padding: 12px 15px 20px 15px;
-				min-height: 0px;
+				// min-height: 0px;
 			}
 		}
 		&--half-light {
@@ -225,7 +228,7 @@
 			flex-grow: 1;
 			min-width: 0px;
 			height: auto;
-			min-height: 90px;
+			// min-height: 90px;
 			// background-color: $dark;
 			color: $dark;
 			@include r(1100) {

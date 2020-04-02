@@ -57,9 +57,7 @@
 		}
 		@include r(1100) {
 			padding-top: 30px;
-		}
-		@include r(580) {
-			display: block;
+			display: none;
 		}
 	}
 	&__navline {
@@ -301,13 +299,10 @@
 	}
 }
 
-// Custom Menu
-
 .mm-menu {
 	font-family: $font-title;
 }
 
-// .mm-navbar {
-// 	background-color: $dark;
-// 	color: #ffffff;
-// }
+.mob-search {
+	max-height: 300px;
+}

@@ -19376,7 +19376,7 @@ var touch = 'ontouchstart' in window ||
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ('8.5.1');
+/* harmony default export */ __webpack_exports__["default"] = ('8.5.3');
 
 
 /***/ }),
@@ -22370,10 +22370,10 @@ var initSearching = function (form) {
         data.panels = _modules_dom__WEBPACK_IMPORTED_MODULE_4__["find"](this.node.pnls, '.mm-panel');
         data.noresults = [this.node.menu];
     }
-    //	Filter out vertical submenus
-    data.panels = data.panels.filter(function (panel) { return !panel.parentElement.matches('.mm-listitem_vertical'); });
     //	Filter out search panel
     data.panels = data.panels.filter(function (panel) { return !panel.matches('.mm-panel_search'); });
+    //	Filter out vertical submenus
+    data.panels = data.panels.filter(function (panel) { return !panel.parentElement.matches('.mm-listitem_vertical'); });
     //  Find listitems and dividers.
     data.listitems = [];
     data.dividers = [];
@@ -22607,6 +22607,18 @@ _core_oncanvas_mmenu_oncanvas__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.
                         parent.classList.add('mm-listitem_nosubitems');
                     }
                 }
+            });
+            //	Show parent panels of vertical submenus
+            panels.forEach(function (panel) {
+                var listitems = _modules_dom__WEBPACK_IMPORTED_MODULE_4__["find"](panel, '.mm-listitem');
+                _modules_dom__WEBPACK_IMPORTED_MODULE_4__["filterLI"](listitems).forEach(function (listitem) {
+                    _modules_dom__WEBPACK_IMPORTED_MODULE_4__["parents"](listitem, '.mm-listitem_vertical').forEach(function (parent) {
+                        if (parent.matches('.mm-hidden')) {
+                            parent.classList.remove('mm-hidden');
+                            parent.classList.add('mm-listitem_onlysubitems');
+                        }
+                    });
+                });
             });
             //	Show first preceeding divider of parent
             panels.forEach(function (panel) {

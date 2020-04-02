@@ -32,6 +32,17 @@ svg, a {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
+	&--desktop {
+		@include r(1100) {
+			display: none;
+		}
+	}
+	&--mobile {
+		display: none;
+		@include r(1100) {
+			display: block;
+		}
+	}
 }
 
 .title {
