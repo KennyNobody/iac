@@ -334,4 +334,17 @@
 
 .mm-menu {
 	font-family: $font-title;
+	.mm-listview {
+		.mm-listitem {
+			&:nth-child(7) {
+				background-color: #CC0202;
+				color: $light;
+				.mm-btn_next {
+					&:after {
+						border-color: #EFF4FA;
+					}
+				}
+			}
+		}
+	}
 }

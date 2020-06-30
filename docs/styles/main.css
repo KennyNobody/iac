@@ -5402,6 +5402,15 @@ a {
   font-family: "Oswald", Arial, sans-serif;
 }
 
+.mm-menu .mm-listview .mm-listitem:nth-child(7) {
+  background-color: #CC0202;
+  color: #EFF4FA;
+}
+
+.mm-menu .mm-listview .mm-listitem:nth-child(7) .mm-btn_next:after {
+  border-color: #EFF4FA;
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -6945,6 +6954,10 @@ a {
   display: none;
 }
 
+.han-news__form .select2 {
+  width: 100%;
+}
+
 .none__content {
   padding-top: 200px;
   padding-bottom: 150px;
@@ -7140,7 +7153,8 @@ a {
   }
 
   .man__thumb {
-    height: auto;
+    width: 236px;
+    height: 192px;
   }
 
   .header {

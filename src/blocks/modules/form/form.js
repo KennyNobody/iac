@@ -1,3 +1,5 @@
+import fancybox from '@fancyapps/fancybox';
+
 $(document).ready(function() {
 	$('.form__select').select2();
 	$('.select-date').datepicker();
@@ -16,4 +18,19 @@ $(document).ready(function() {
 			})
 		}
 	})();
+
+	// $('.single--han .single__content a').fancybox({
+
+	// });
+
+	$('.single--han .single__content a').each(function () {
+		if ($(this).has('img').length) {
+			$(this).addClass('fancybox-single');
+		}
+	});
+
+	$().fancybox({
+		selector : '.fancybox-single'
+	});
+	
 });

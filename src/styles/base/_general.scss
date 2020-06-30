@@ -370,7 +370,8 @@ svg, a {
 		height: 192px;
 		margin-bottom: 15px;
 		@include r(1100) {
-			height: auto;
+			width: 236px;
+			height: 192px;
 		}
 		img {
 			display: block;
