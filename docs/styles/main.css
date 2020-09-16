@@ -5,7 +5,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic");
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700&display=swap&subset=cyrillic");
 
 html,
 body,
@@ -4743,7 +4743,7 @@ a {
 
 .body {
   color: #1A242D;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-size: 16px;
   overflow-x: hidden;
   line-height: 1.3;
