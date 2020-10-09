@@ -278,6 +278,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/modal/modal.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/modal/modal.js ***!
+  \*******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var micromodal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! micromodal */ "./node_modules/micromodal/dist/micromodal.es.js");
+
+window.addEventListener('load', function () {
+  micromodal__WEBPACK_IMPORTED_MODULE_0__["default"].init({
+    onShow: function onShow(modal) {
+      return console.info("".concat(modal.id, " is shown"));
+    },
+    onClose: function onClose(modal) {
+      return console.info("".concat(modal.id, " is hidden"));
+    },
+    openTrigger: 'data-custom-open',
+    closeTrigger: 'data-custom-close',
+    openClass: 'is-open',
+    disableFocus: false
+  });
+  var flag;
+  var subscribeCheckbox = document.querySelector('.modal__save-input--subscribe');
+  subscribeCheckbox.addEventListener('change', function () {
+    if (this.checked == true) {
+      localStorage.setItem('flag', 'true');
+    } else {
+      localStorage.setItem('flag', 'false');
+    }
+  });
+
+  if (localStorage.getItem('flag') != 'true') {
+    setTimeout(function () {
+      micromodal__WEBPACK_IMPORTED_MODULE_0__["default"].show('modal-1');
+    }, 10000);
+  }
+
+  function setState() {}
+});
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -296,11 +341,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! air-datepicker */ "./node_modules/air-datepicker/src/js/air-datepicker.js");
 /* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var mmenu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mmenu-js */ "./node_modules/mmenu-js/src/mmenu.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 

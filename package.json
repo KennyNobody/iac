@@ -70,6 +70,7 @@
         "@fancyapps/fancybox": "^3.5.7",
         "air-datepicker": "^2.2.3",
         "jquery": "^3.4.1",
+        "micromodal": "^0.4.6",
         "mmenu-js": "^8.5.1",
         "select2": "^4.0.13",
         "smart-grid": "^2.1.2"

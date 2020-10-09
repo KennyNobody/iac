@@ -3,6 +3,7 @@ import fancybox from '@fancyapps/fancybox';
 import select2 from 'select2';
 import datepicker from 'air-datepicker';
 import Mmenu from 'mmenu-js';
+import "%modules%/modal/modal";
 import "%modules%/header/header";
 import "%modules%/form/form";
 import "%modules%/footer/footer"
