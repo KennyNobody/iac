@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
 		
 		setTimeout( function(){
 			MicroModal.show('modal-1');
-		}, 10000);
+		}, 15000);
 	}
 
 	function setState () {

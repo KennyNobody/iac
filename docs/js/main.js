@@ -315,7 +315,7 @@ window.addEventListener('load', function () {
   if (localStorage.getItem('flag') != 'true') {
     setTimeout(function () {
       micromodal__WEBPACK_IMPORTED_MODULE_0__["default"].show('modal-1');
-    }, 10000);
+    }, 15000);
   }
 
   function setState() {}
