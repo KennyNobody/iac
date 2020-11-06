@@ -21,12 +21,12 @@ window.addEventListener('load', function () {
 		}
 	})
 
-	if (localStorage.getItem('flag') != 'true') {
+	// if (localStorage.getItem('flag') != 'true') {
 		
-		setTimeout( function(){
-			MicroModal.show('modal-1');
-		}, 15000);
-	}
+	// 	setTimeout( function(){
+	// 		MicroModal.show('modal-1');
+	// 	}, 15000);
+	// }
 
 	function setState () {
 

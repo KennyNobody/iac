@@ -310,13 +310,11 @@ window.addEventListener('load', function () {
     } else {
       localStorage.setItem('flag', 'false');
     }
-  });
-
-  if (localStorage.getItem('flag') != 'true') {
-    setTimeout(function () {
-      micromodal__WEBPACK_IMPORTED_MODULE_0__["default"].show('modal-1');
-    }, 15000);
-  }
+  }); // if (localStorage.getItem('flag') != 'true') {
+  // 	setTimeout( function(){
+  // 		MicroModal.show('modal-1');
+  // 	}, 15000);
+  // }
 
   function setState() {}
 });
