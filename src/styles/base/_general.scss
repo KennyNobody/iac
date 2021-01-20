@@ -105,6 +105,13 @@ svg, a {
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
+	img:not(.image-custom) {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
 	p {
 		margin-bottom: 1rem;
 		padding-left: 88px;
@@ -387,4 +394,97 @@ svg, a {
 	&__discript {
 		color: $blue-light;
 	}
+}
+
+// Кусок после доработок
+.social_sn-block {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.social_sn-block strong {
+    font-weight: 600;
+    color: #000
+}
+
+.social_sn-block a {
+    color: #84aacb;
+    text-decoration: none
+}
+
+.pagination {
+    display: flex;
+    height: auto
+}
+
+@media all and (max-width: 767px) {
+    .pagination {
+        flex-wrap: wrap;
+        margin: 0 auto
+    }
+}
+
+.pagination__link {
+    height: 38px
+}
+
+@media all and (max-width: 767px) {
+    .pagination__link {
+        margin-bottom: 4px
+    }
+
+    .pagination__link_mobile-hidden {
+        display: none
+    }
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.image-custom {
+    max-width: 100%;
+}
+
+@media all and (max-width: 767px) {
+    .image-custom {
+        width: 100%;
+    }
 }
