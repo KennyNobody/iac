@@ -231,12 +231,14 @@ svg, a {
 		padding-top: 21px;
 		padding-bottom: 21px;
 		display: block;
+		height: auto;
 		&:hover {
 			opacity: 0.7;
 		}
 		&--light {
 			padding: 0px;
-			height: 294px;
+			// height: 294px;
+			height: auto;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
